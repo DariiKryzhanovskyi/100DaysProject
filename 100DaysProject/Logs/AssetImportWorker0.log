@@ -15,7 +15,7 @@ C:/GitHub/100DaysProject/100DaysProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52936
+54042
 Successfully changed project path to: C:/GitHub/100DaysProject/100DaysProject
 C:/GitHub/100DaysProject/100DaysProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ C:/GitHub/100DaysProject/100DaysProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [24692]  Target information:
+Player connection [21040]  Target information:
 
-Player connection [24692]  * "[IP] 26.247.127.125 [Port] 0 [Flags] 2 [Guid] 490708462 [EditorId] 490708462 [Version] 1048832 [Id] WindowsEditor(7,DariiPc) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21040]  * "[IP] 26.247.127.125 [Port] 0 [Flags] 2 [Guid] 1775101163 [EditorId] 1775101163 [Version] 1048832 [Id] WindowsEditor(7,DariiPc) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24692]  * "[IP] 192.168.237.193 [Port] 0 [Flags] 2 [Guid] 490708462 [EditorId] 490708462 [Version] 1048832 [Id] WindowsEditor(7,DariiPc) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21040]  * "[IP] 192.168.237.193 [Port] 0 [Flags] 2 [Guid] 1775101163 [EditorId] 1775101163 [Version] 1048832 [Id] WindowsEditor(7,DariiPc) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [24692] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [24692] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21040] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21040] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 20.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 39.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.43f1 (85497d293fa1)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.43f1/Editor/Data/Resources/UnitySubsystems
@@ -74,47 +74,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.43f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.43f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56552
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.43f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015520 seconds.
-- Loaded All Assemblies, in  1.085 seconds
+Registered in 0.025669 seconds.
+- Loaded All Assemblies, in  1.440 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1327 ms
+Android Extension - Scanning For ADB Devices 1124 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.706 seconds
-Domain Reload Profiling: 3787ms
-	BeginReloadAssembly (322ms)
+- Finished resetting the current domain, in  2.372 seconds
+Domain Reload Profiling: 3806ms
+	BeginReloadAssembly (453ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (165ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (122ms)
-	LoadAllAssembliesAndSetupDomain (450ms)
-		LoadAssemblies (322ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (142ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (221ms)
+	LoadAllAssembliesAndSetupDomain (578ms)
+		LoadAssemblies (440ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (439ms)
-			TypeCache.Refresh (438ms)
-				TypeCache.ScanAssembly (409ms)
+		AnalyzeDomain (572ms)
+			TypeCache.Refresh (568ms)
+				TypeCache.ScanAssembly (522ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (2707ms)
+	FinalizeReload (2373ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2602ms)
+		SetupLoadedEditorAssemblies (2206ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1689ms)
-			SetLoadedEditorAssemblies (22ms)
+			InitializePlatformSupportModulesInManaged (1490ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (685ms)
-			ProcessInitializeOnLoadMethodAttributes (200ms)
+			ProcessInitializeOnLoadAttributes (505ms)
+			ProcessInitializeOnLoadMethodAttributes (195ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,7 +123,7 @@ Domain Reload Profiling: 3787ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.412 seconds
+- Loaded All Assemblies, in  2.949 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -131,47 +131,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.679 seconds
-Domain Reload Profiling: 3088ms
-	BeginReloadAssembly (304ms)
+- Finished resetting the current domain, in  2.841 seconds
+Domain Reload Profiling: 5779ms
+	BeginReloadAssembly (539ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (73ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (92ms)
-	LoadAllAssembliesAndSetupDomain (913ms)
-		LoadAssemblies (677ms)
+		CreateAndSetChildDomain (72ms)
+	RebuildCommonClasses (138ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (137ms)
+	LoadAllAssembliesAndSetupDomain (2086ms)
+		LoadAssemblies (1500ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (421ms)
-			TypeCache.Refresh (352ms)
-				TypeCache.ScanAssembly (315ms)
-			ScanForSourceGeneratedMonoScriptInfo (44ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1680ms)
+		AnalyzeDomain (912ms)
+			TypeCache.Refresh (793ms)
+				TypeCache.ScanAssembly (703ms)
+			ScanForSourceGeneratedMonoScriptInfo (74ms)
+			ResolveRequiredComponents (41ms)
+	FinalizeReload (2843ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1293ms)
+		SetupLoadedEditorAssemblies (2036ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (96ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (117ms)
+			SetLoadedEditorAssemblies (17ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (231ms)
-			ProcessInitializeOnLoadAttributes (795ms)
-			ProcessInitializeOnLoadMethodAttributes (146ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (316ms)
+			ProcessInitializeOnLoadAttributes (1346ms)
+			ProcessInitializeOnLoadMethodAttributes (221ms)
+			AfterProcessingInitializeOnLoad (18ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 8.00 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (26ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.17 seconds
+Refreshing native plugins compatible for Editor in 26.74 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4931 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (347.7 KB). Loaded Objects now: 5394.
-Memory consumption went from 196.7 MB to 196.3 MB.
-Total: 8.909500 ms (FindLiveObjects: 1.226800 ms CreateObjectMapping: 0.709100 ms MarkObjects: 6.690000 ms  DeleteObjects: 0.278600 ms)
+Unloading 5445 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (348.8 KB). Loaded Objects now: 5939.
+Memory consumption went from 221.9 MB to 221.6 MB.
+Total: 17.048500 ms (FindLiveObjects: 7.088400 ms CreateObjectMapping: 2.435100 ms MarkObjects: 7.199500 ms  DeleteObjects: 0.322900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -189,19 +189,1885 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 114785.145548 seconds.
-  path: Assets/Readme.asset
-  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'f448eb04ce67474f4a165c248c238a66') in 0.036784 seconds
+  Time since last request: 117292.496842 seconds.
+  path: Assets/Settings/SampleSceneProfile.asset
+  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '820832367ad8a4935557e46766d9ab68') in 1.450018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Wheels/Wheel_4.prefab
+  artifactKey: Guid(5efa4ef47b4e24548ada9449d9cc529c) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Wheels/Wheel_4.prefab using Guid(5efa4ef47b4e24548ada9449d9cc529c) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '32aebac0eb20f0925e4ea8ff5f8f2874') in 0.118766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Model_Sofie@Driving by BUMSTRUM.prefab
+  artifactKey: Guid(6fa73193fc7c3a040acf01c5757f473a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Model_Sofie@Driving by BUMSTRUM.prefab using Guid(6fa73193fc7c3a040acf01c5757f473a) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a6a189c4f593889f91960e2a442e2a2') in 0.753000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 334
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Settings/URP-Balanced.asset
+  artifactKey: Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/Settings/URP-Balanced.asset using Guid(e1260c1148f6143b28bae5ace5e9c5d1) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '51a7844a20e9b92bfae4c6ba135d6146') in 0.060239 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 4.282181 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(18dc0cd2c080841dea60987a38ce93fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'ad80ba5e6109085775abba960972809b') in 0.001744 seconds
+  Time since last request: 0.000046 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Generic
+  artifactKey: Guid(a365ffb8d72c21946abd349ad301e0b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Generic using Guid(a365ffb8d72c21946abd349ad301e0b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '36af7c9532f8dbd7b3edd14047a0bb9a') in 0.044514 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/InteriorLight.prefab
+  artifactKey: Guid(cc20828c829fab54e98d1213a6690e3e) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/InteriorLight.prefab using Guid(cc20828c829fab54e98d1213a6690e3e) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '464459c1d42b0b93ed8d7b9a3b1fe12d') in 0.061279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat/Mirrors.mat
+  artifactKey: Guid(11b5da71848f8664387c5a49480698df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat/Mirrors.mat using Guid(11b5da71848f8664387c5a49480698df) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '09631eb35609ef21e83ad4c3e507bdf8') in 0.294104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Dev Textures
+  artifactKey: Guid(c261c0ede9580a347a70c9081c0b7b47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Dev Textures using Guid(c261c0ede9580a347a70c9081c0b7b47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c3835f854e2247a1e8214fc034bbaf0e') in 0.026107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Tex/Container.png
+  artifactKey: Guid(75652df8aac7e7b40b553d7d154baae9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Tex/Container.png using Guid(75652df8aac7e7b40b553d7d154baae9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6595eb9642f3c707d2fffc0783876779') in 0.369629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RealisticCarControllerV3/Icon.png
+  artifactKey: Guid(9e7ac442d0040dc44b6dedbc949128b1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Icon.png using Guid(9e7ac442d0040dc44b6dedbc949128b1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'df1dd14e3a0a07cbefbc5bd2ab17a62f') in 0.287767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Crashers/Crashers.FBX
+  artifactKey: Guid(0c432ddbfb774964293948417439197f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Crashers/Crashers.FBX using Guid(0c432ddbfb774964293948417439197f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3e5ffaf4c52e9d2ca31f781c66e5c51f') in 0.422809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 289
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Crashers/Hammer.prefab
+  artifactKey: Guid(ac8b34bc50affa94ea02e5d98c9128bb) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Crashers/Hammer.prefab using Guid(ac8b34bc50affa94ea02e5d98c9128bb) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2914cf06f8d71bf41a46417fbea0e903') in 0.078086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000962 seconds.
+  path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Damage Test Scene.unity
+  artifactKey: Guid(befe5f7695932b7489879b3ebd7ca461) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Demo Scenes/RCC Damage Test Scene.unity using Guid(befe5f7695932b7489879b3ebd7ca461) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+Opening scene 'Assets/RealisticCarControllerV3/Demo Scenes/RCC Damage Test Scene.unity additively'
+LightingSettings: switching bake backend from 1 to 0.
+Couldn't create a Convex Mesh from source mesh "Hood" within the maximum polygons limit (256). The partial hull will be used. Consider simplifying your mesh.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Physics\NxMeshCreation.cpp line 96]
+
+Couldn't create a Convex Mesh from source mesh "Collider" within the maximum polygons limit (256). The partial hull will be used. Consider simplifying your mesh.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Physics\NxMeshCreation.cpp line 96]
+
+Couldn't create a Convex Mesh from source mesh "Bumper_R" within the maximum polygons limit (256). The partial hull will be used. Consider simplifying your mesh.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Physics\NxMeshCreation.cpp line 96]
+
+Couldn't create a Convex Mesh from source mesh "Bumper_F" within the maximum polygons limit (256). The partial hull will be used. Consider simplifying your mesh.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:OpenScene (string,UnityEditor.SceneManagement.OpenSceneMode)
+UnityEditor.Search.AssetIndexer:IndexScene (string,bool)
+UnityEditor.Search.AssetIndexer:IndexSceneDocument (string,bool)
+UnityEditor.Search.AssetIndexer:IndexDocument (string,bool)
+UnityEditor.Search.SearchIndexEntryImporter:OnImportAsset (UnityEditor.AssetImporters.AssetImportContext)
+UnityEditor.AssetImporters.ScriptedImporter:GenerateAssetData (UnityEditor.AssetImporters.AssetImportContext)
+
+[C:\build\output\unity\unity\Modules\Physics\NxMeshCreation.cpp line 96]
+
+Loaded scene 'Assets/RealisticCarControllerV3/Demo Scenes/RCC Damage Test Scene.unity'
+	Deserialize:            26.763 ms
+	Integration:            1194.505 ms
+	Integration of assets:  2.730 ms
+	Thread Wait Time:       0.078 ms
+	Total Operation Time:   1224.075 ms
+ -> (artifact id: 'f5bfa2f8496aaaf8d747e4cec555c5c5') in 3.140786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4369
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_Chrome.mat
+  artifactKey: Guid(985423591f6a8d943a75e8bbaa273496) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_Chrome.mat using Guid(985423591f6a8d943a75e8bbaa273496) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '88c4e3af38a22b61fc21f233dedc902e') in 0.037768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.006365 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Dashboard/NeedleTop.png
+  artifactKey: Guid(628cc69884b489440889479d274302c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Dashboard/NeedleTop.png using Guid(628cc69884b489440889479d274302c9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ec505e2b679b0917586469f274660102') in 0.067371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001402 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Spoilers/Mat/Spoiler_Metal.mat
+  artifactKey: Guid(a28c530224c386241a124f7c99f1d796) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Spoilers/Mat/Spoiler_Metal.mat using Guid(a28c530224c386241a124f7c99f1d796) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bf2eb6e49f31a8212f6855de3c6832ae') in 0.039214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/RCCSkidmarksManager.prefab
+  artifactKey: Guid(a107dc7aa77e84f4d8cf9888def4fe64) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/RCCSkidmarksManager.prefab using Guid(a107dc7aa77e84f4d8cf9888def4fe64) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9c359fdb4f699504b91fd1c93e285170') in 0.040205 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Skyscrapper 8.mat
+  artifactKey: Guid(026a6382eed21f5439c5add6e6f68775) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Skyscrapper 8.mat using Guid(026a6382eed21f5439c5add6e6f68775) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '83ee26b8207a0cd6b21eea17fbedee6c') in 0.052409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/ExhaustFires/ExhaustFire3.wav
+  artifactKey: Guid(f772a702dcfbfe9478afe01aa9429fbc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/ExhaustFires/ExhaustFire3.wav using Guid(f772a702dcfbfe9478afe01aa9429fbc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd8b9df339ec08893fe0ae7ef59ad80f8') in 0.108501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Crashers/Crasher_2.prefab
+  artifactKey: Guid(edc0077a6a24f344c8f761038d460c70) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Crashers/Crasher_2.prefab using Guid(edc0077a6a24f344c8f761038d460c70) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c57e986de271c046e277b6b5c2a1bb65') in 0.062818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 98
+========================================================================
+Received Import Request.
+  Time since last request: 0.002779 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat/Spoiler.mat
+  artifactKey: Guid(52b33206bf2214b47b55b6dd2beba50b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat/Spoiler.mat using Guid(52b33206bf2214b47b55b6dd2beba50b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '575d38dcb9aa59a33fa3a981560038b6') in 0.036880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001723 seconds.
+  path: Assets/Settings/URP-Balanced-Renderer.asset
+  artifactKey: Guid(e634585d5c4544dd297acaee93dc2beb) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/Settings/URP-Balanced-Renderer.asset using Guid(e634585d5c4544dd297acaee93dc2beb) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f78af07c8d994f805775b9bb54912e5f') in 0.037184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004080 seconds.
+  path: Assets/RealisticCarControllerV3/Animators & Animations/RCC Cinematic Animation 3.anim
+  artifactKey: Guid(7a7d581820226914db77303e82df480f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Animators & Animations/RCC Cinematic Animation 3.anim using Guid(7a7d581820226914db77303e82df480f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ded64a6eb80fc49a34424978ec27f346') in 0.061248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Particles/RCCExhaust.prefab
+  artifactKey: Guid(46992adcb9d56714eb84164c8a965492) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Particles/RCCExhaust.prefab using Guid(46992adcb9d56714eb84164c8a965492) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aae477b15d4197e405f2e02aae16c8e9') in 0.036577 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.006711 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_RubberTrim.mat
+  artifactKey: Guid(dcea936f86852f6408b74d0ad8cac64b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_RubberTrim.mat using Guid(dcea936f86852f6408b74d0ad8cac64b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b91327e740e98a748fe14f3bab729637') in 0.032371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002758 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36/Mat/M3_E36 Exhaust.mat
+  artifactKey: Guid(153eb4173e35a4d4b9285aead4b9c095) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36/Mat/M3_E36 Exhaust.mat using Guid(153eb4173e35a4d4b9285aead4b9c095) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6cfb466232447a1fdfbad127a1424d5f') in 0.031448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001285 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Crashers/Tex/Stripes_1.png
+  artifactKey: Guid(218934e2310af4242b82e064fa81cce1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Crashers/Tex/Stripes_1.png using Guid(218934e2310af4242b82e064fa81cce1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b20e94b8d9b7b2318cd78660ca3fad53') in 0.060172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002794 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Turbo/Turbo.WAV
+  artifactKey: Guid(7f48c51367eb26f4bb55673f28ae5404) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Turbo/Turbo.WAV using Guid(7f48c51367eb26f4bb55673f28ae5404) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd87112299a57deaf637abbea89197864') in 0.156872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004708 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Highway/Tex
+  artifactKey: Guid(3abe3c04a5651264cb279fc94d00f962) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Highway/Tex using Guid(3abe3c04a5651264cb279fc94d00f962) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'da5e0fdd1405594c8f39a6db300f92fd') in 0.023991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Mobile Textures/InteractableHand.png
+  artifactKey: Guid(d26b3389f035a6245b30b6eff3383699) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Mobile Textures/InteractableHand.png using Guid(d26b3389f035a6245b30b6eff3383699) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '770637fce80ccb7dc9dea92c5739f245') in 0.070070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Animators
+  artifactKey: Guid(18aa3fd76c571a249a32706d6c6ab9b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Animators using Guid(18aa3fd76c571a249a32706d6c6ab9b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3f56fafe9137e215407461660173277e') in 0.022972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000674 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Container/Container.FBX
+  artifactKey: Guid(7bd36fa3753500946b3b12063b2578cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Container/Container.FBX using Guid(7bd36fa3753500946b3b12063b2578cc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f0b61b75423de1dac39e78a2a810aac') in 0.061168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.001526 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Plate 2.mat
+  artifactKey: Guid(8445febf1f10a6b48bc9860be8054309) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Plate 2.mat using Guid(8445febf1f10a6b48bc9860be8054309) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2168abcdf70873294a0b6fc4012e055d') in 0.042123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/RCC Assets/RCC_DemoVehicles.asset
+  artifactKey: Guid(c23229b4aea6d4646b7719999e842a21) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Resources/RCC Assets/RCC_DemoVehicles.asset using Guid(c23229b4aea6d4646b7719999e842a21) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f26d314b6c40c21bf628531f8592ed45') in 0.779090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3066
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_Glass.mat
+  artifactKey: Guid(086d96e0448c7d64f83ad526c65e81f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_Glass.mat using Guid(086d96e0448c7d64f83ad526c65e81f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '84a783c15e515dc802988e9b0c9c23c1') in 0.035943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Vehicle Textures/skylineEmmisive.png
+  artifactKey: Guid(76058994f9d43ed449557e6aab74f82e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Vehicle Textures/skylineEmmisive.png using Guid(76058994f9d43ed449557e6aab74f82e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'db5d3eed78cef35d632abf6c722d40bf') in 0.077688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000639 seconds.
+  path: Assets/RealisticCarControllerV3/Terrain/RCCTerrainLayer1.terrainlayer
+  artifactKey: Guid(4d5c943d6d00c0447ac6305e2cf67fb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Terrain/RCCTerrainLayer1.terrainlayer using Guid(4d5c943d6d00c0447ac6305e2cf67fb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '04cd2898e37464ac2c9966c95bec1cbf') in 0.042982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002476 seconds.
+  path: Assets/Readme.asset
+  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4785b090db4cd1b9be420ced8897e69f') in 0.043632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005344 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Jeep.prefab
+  artifactKey: Guid(b6c8a12b979de084c9fcb410d00706b5) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Jeep.prefab using Guid(b6c8a12b979de084c9fcb410d00706b5) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8943304394ce9b5ddfbabe7928ba3a9f') in 0.194244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 261
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_UI_Canvas_Modification.cs
+  artifactKey: Guid(0abe3acede2e3e34fa93226561a3774c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_UI_Canvas_Modification.cs using Guid(0abe3acede2e3e34fa93226561a3774c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cb2a28afd0171a515fffc611d4a1744c') in 0.036446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_UISliderTextReader.cs
+  artifactKey: Guid(ad6b397d5dbb276478f91d3be3d72381) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_UISliderTextReader.cs using Guid(ad6b397d5dbb276478f91d3be3d72381) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0b817ed3df578d3309d233081b683d6b') in 0.029785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Generic/Generic_Med_Off.wav
+  artifactKey: Guid(4454189fef3d9814e8bce98f844e72ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Generic/Generic_Med_Off.wav using Guid(4454189fef3d9814e8bce98f844e72ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd43c8793f5020c139c2cf62567229248') in 0.098983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/RealisticCarControllerV3/Physics Materials/RCCZeroFriction.physicMaterial
+  artifactKey: Guid(dc74e74acd48f9d4d96a023f2bb05a4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Physics Materials/RCCZeroFriction.physicMaterial using Guid(dc74e74acd48f9d4d96a023f2bb05a4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ed0ee8dab9dac10ce613f94f6dc73fe8') in 0.032188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/UI/RCCCanvas.prefab
+  artifactKey: Guid(3c49455ff7757444fa4b466c3250f423) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/UI/RCCCanvas.prefab using Guid(3c49455ff7757444fa4b466c3250f423) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5fe2657a82ad83311d6aa9308150c63b') in 0.400370 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1909
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_VehicleUpgrade_SirenManager.cs
+  artifactKey: Guid(8ed74c26156d365408ecba7d22ff9b54) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_VehicleUpgrade_SirenManager.cs using Guid(8ed74c26156d365408ecba7d22ff9b54) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e4b1993e23c52a50314f51fbebdc3c14') in 0.028139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/F1.prefab
+  artifactKey: Guid(0b1c534c7466b8e4e918a77c360f45ee) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/F1.prefab using Guid(0b1c534c7466b8e4e918a77c360f45ee) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '70e3878fc0d81cc3945b4f28fcf9f984') in 0.151927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 135
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/RealisticCarControllerV3/LICENSE - Read Me!.txt
+  artifactKey: Guid(78de263dac5fa5b4493c0dddd051641d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/LICENSE - Read Me!.txt using Guid(78de263dac5fa5b4493c0dddd051641d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ff20783d0538efffc42f1738944656eb') in 0.026549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.007611 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_UIController.cs
+  artifactKey: Guid(9e027cf5d099f8a41ab78532b4e84490) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_UIController.cs using Guid(9e027cf5d099f8a41ab78532b4e84490) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e67bf6eb0f18bc294452e71ab8d98a22') in 0.026200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000770 seconds.
+  path: Assets/RealisticCarControllerV3/Physics Materials/RCCGrassPhysics.physicMaterial
+  artifactKey: Guid(64ad35dfd5f45dd4c94b03236a5dd4b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Physics Materials/RCCGrassPhysics.physicMaterial using Guid(64ad35dfd5f45dd4c94b03236a5dd4b7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9c4c392af9c7dfd4038a27ef20900fda') in 0.030661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001070 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Jeep.prefab
+  artifactKey: Guid(b6c8a12b979de084c9fcb410d00706b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Jeep.prefab using Guid(b6c8a12b979de084c9fcb410d00706b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b5eb0b72d64264930ca1d1c2f71f2635') in 0.303456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 248
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Wheels/Mat/Wheel6_Rim.mat
+  artifactKey: Guid(5a40b3574450ec846870443265930e87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Wheels/Mat/Wheel6_Rim.mat using Guid(5a40b3574450ec846870443265930e87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b9a9d3f3b496f1bf7b34837247935c96') in 0.035779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Tex/Windows_Wide.bmp
+  artifactKey: Guid(5bcaf64675dc4b1488cd83692b763e8e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Tex/Windows_Wide.bmp using Guid(5bcaf64675dc4b1488cd83692b763e8e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '56a10cd424ac6f1fd80c741be2395419') in 0.047451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/RCC Assets/RCC_InitialSettings.asset
+  artifactKey: Guid(45b7996cc08421a4ea28ddc3acffb968) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Resources/RCC Assets/RCC_InitialSettings.asset using Guid(45b7996cc08421a4ea28ddc3acffb968) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '344630da1bedb795b3da7a391507f58e') in 0.037545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000818 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Materials/Skyline_Wheel.mat
+  artifactKey: Guid(730e3b53393c2d244a1bf2724ae33055) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Materials/Skyline_Wheel.mat using Guid(730e3b53393c2d244a1bf2724ae33055) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f0496e02f008a91d69554c4e11d10ae') in 0.052973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.003211 seconds.
+  path: Assets/RealisticCarControllerV3/Physics Materials/RCCBarrierCollider.physicMaterial
+  artifactKey: Guid(83efefb9791d4794d8bf2bf3511cbe0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Physics Materials/RCCBarrierCollider.physicMaterial using Guid(83efefb9791d4794d8bf2bf3511cbe0d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'af37d3aef46d341040b62df5b57dc783') in 0.031783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003085 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Yellow Roof.mat
+  artifactKey: Guid(2e1bee9f9d467194283e95a13e38e01b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Yellow Roof.mat using Guid(2e1bee9f9d467194283e95a13e38e01b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e24508c8ba85e194e781887a7698e1fc') in 0.038947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001037 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Crashers/Stand_2.prefab
+  artifactKey: Guid(504a3447cf3854644b562a2d54b6da35) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Crashers/Stand_2.prefab using Guid(504a3447cf3854644b562a2d54b6da35) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8a1adb0d3b62fe258aaae223a473f6dc') in 0.032056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000631 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/City.prefab
+  artifactKey: Guid(feca604884f6a74419aecd19df680a78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/City.prefab using Guid(feca604884f6a74419aecd19df680a78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '64d305841c92074f8c091a211e89d489') in 0.092919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1136
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/E36_High_Off.wav
+  artifactKey: Guid(dd31934351e19ce49a9953b1e10de387) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/E36_High_Off.wav using Guid(dd31934351e19ce49a9953b1e10de387) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cc7831609f78b4a6349adccac02b47fd') in 0.104638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002425 seconds.
+  path: Assets/RealisticCarControllerV3/Editor/RCC_SettingsEditor.cs
+  artifactKey: Guid(9b7a9461ce3929c42b6203d6c89821b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Editor/RCC_SettingsEditor.cs using Guid(9b7a9461ce3929c42b6203d6c89821b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd243e71a06573d6897b3320763ece8c1') in 0.034052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_VehicleUpgrade_Siren.cs
+  artifactKey: Guid(57316afaf64bdbe43a5f2c8fbf65e66a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_VehicleUpgrade_Siren.cs using Guid(57316afaf64bdbe43a5f2c8fbf65e66a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '44d0b99eef3ad5f2a6b57bee03dac125') in 0.034266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002230 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_FeedVehicleExample.cs
+  artifactKey: Guid(ce218027992acef4e9ea2f59a23aef63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_FeedVehicleExample.cs using Guid(ce218027992acef4e9ea2f59a23aef63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e46d9934a28ebbe764e57b59f5738ecc') in 0.032336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36/Mat/M3_E36 Misc.mat
+  artifactKey: Guid(baec03a257f749f458ce4551a2dc0b8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36/Mat/M3_E36 Misc.mat using Guid(baec03a257f749f458ce4551a2dc0b8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '483674634ac170c753eaa1f17432eddd') in 0.037272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Misc/Wind.wav
+  artifactKey: Guid(6c7312d1af74e3f4599722894161fafc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Misc/Wind.wav using Guid(6c7312d1af74e3f4599722894161fafc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9b9e1cc57b33b3ae9d861ccf6c1556fd') in 0.162706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002990 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Small Trailer/Tex/Fence_N.png
+  artifactKey: Guid(a3564e60d8fae6b4986b6f6ba98c9a25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Small Trailer/Tex/Fence_N.png using Guid(a3564e60d8fae6b4986b6f6ba98c9a25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8b55ee38b8c6c3c55273323bfba2bb76') in 0.060281 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001093 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_ShowroomCamera.cs
+  artifactKey: Guid(bd61449046a6a8c4c9b1f0db7e9e06ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_ShowroomCamera.cs using Guid(bd61449046a6a8c4c9b1f0db7e9e06ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '11bb265e482e6f5bdf47b6e908ab350b') in 0.038406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005125 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Dashboard/Dashboard.FBX
+  artifactKey: Guid(c22cdbce0d992924a8d5e2695db7679b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Dashboard/Dashboard.FBX using Guid(c22cdbce0d992924a8d5e2695db7679b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1ee3ee2eecba839300771557511904f4') in 0.074250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.003251 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Mirrors.prefab
+  artifactKey: Guid(42ab1ab32651fc74dad3e9cedf0b5270) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Mirrors.prefab using Guid(42ab1ab32651fc74dad3e9cedf0b5270) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a5502a77792c0e848150e72976caa216') in 0.031290 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.002934 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/Editor/ExhaustIcon.png
+  artifactKey: Guid(21351b5abf305c644afa2ece6cf6240d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/Editor/ExhaustIcon.png using Guid(21351b5abf305c644afa2ece6cf6240d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8722b87cd18700b7befdd50f9b6bd93c') in 0.058725 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/RealisticCarControllerV3/Terrain/NewTerrain2.asset
+  artifactKey: Guid(e3ebb785d2495df4a842b659165f3ec7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Terrain/NewTerrain2.asset using Guid(e3ebb785d2495df4a842b659165f3ec7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '78d30cf2b98cb0c73112a9961eb07590') in 0.082615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Mobile Textures/ArrowLeft.png
+  artifactKey: Guid(0ca44adc2f47b6443b42b6ee81cd12ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Mobile Textures/ArrowLeft.png using Guid(0ca44adc2f47b6443b42b6ee81cd12ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1e08edacfde5c359584d65420610fa74') in 0.059625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Skyscrapper 9.mat
+  artifactKey: Guid(264d1ef8ab1a7e743a56eb4f31e8e877) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Skyscrapper 9.mat using Guid(264d1ef8ab1a7e743a56eb4f31e8e877) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0cce70dc69abc5a8658c6b2e9d0753c4') in 0.042546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005643 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Vehicle Textures
+  artifactKey: Guid(96e7931a062c9bd4190b53223d747763) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Vehicle Textures using Guid(96e7931a062c9bd4190b53223d747763) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5ce2478442b40f09cadb2a1ff7ea4773') in 0.030908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001768 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Particles/RCCWheelSparkles.prefab
+  artifactKey: Guid(de4704e3426ad794c9166d4f75ab33c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Particles/RCCWheelSparkles.prefab using Guid(de4704e3426ad794c9166d4f75ab33c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'da0d3df7b484795a89af9178ec463c6f') in 0.350829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticCarControllerV3/Editor/Font
+  artifactKey: Guid(8c5dc615a091b6d46818aac7810a8386) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Editor/Font using Guid(8c5dc615a091b6d46818aac7810a8386) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b8a7659010494df0206605141839b2e5') in 0.032923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RealisticCarControllerV3/Editor/RCC_AIWPEditor.cs
+  artifactKey: Guid(82db4392be03c57478db78491ce31368) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Editor/RCC_AIWPEditor.cs using Guid(82db4392be03c57478db78491ce31368) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0070270c2e9fcaf3223bd847d7f2e1e9') in 0.034683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/RealisticCarControllerV3/Skybox/SkyboxGuidelines.txt
+  artifactKey: Guid(f3551bcdc56924943a2bfd815959eb87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Skybox/SkyboxGuidelines.txt using Guid(f3551bcdc56924943a2bfd815959eb87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a40f0890d7d984bcdb5ddee50f9f6276') in 0.043366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000915 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat
+  artifactKey: Guid(1e7fbefcb146fbf4d9d488e09e5a7cde) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat using Guid(1e7fbefcb146fbf4d9d488e09e5a7cde) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6d4696c10ff38d0e36f401d058ead833') in 0.024015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001392 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Upgrades/Logo_Neon.png
+  artifactKey: Guid(d16eddd1235e0bf48ba6ff11f9617198) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Upgrades/Logo_Neon.png using Guid(d16eddd1235e0bf48ba6ff11f9617198) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e0e4815dcddbe3182aa38b2af8030800') in 0.086606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Pickup/Mat/Head Lights.mat
+  artifactKey: Guid(d61e2fd6ffb69344aa109178771b6b19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Pickup/Mat/Head Lights.mat using Guid(d61e2fd6ffb69344aa109178771b6b19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aa5cb83b43876ccb7150a104655d8af0') in 0.040620 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Roads/Roads.fbm/Road_S.tga
+  artifactKey: Guid(f3eb671c5ced0ad4fbbe67892e54ff29) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Roads/Roads.fbm/Road_S.tga using Guid(f3eb671c5ced0ad4fbbe67892e54ff29) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '439efb97981cf41aa6c9c8b87bb3c9ce') in 0.056230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003323 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Container/Mat
+  artifactKey: Guid(4f9788d178ccd41438b59ca7125d1699) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Container/Mat using Guid(4f9788d178ccd41438b59ca7125d1699) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8fb30f759098cd947457b1ec67bb4b1c') in 0.025301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Particles/RCCWheelSlipSand.prefab
+  artifactKey: Guid(19d4c8eda967b7547af76ca0165fc47e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Particles/RCCWheelSlipSand.prefab using Guid(19d4c8eda967b7547af76ca0165fc47e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a91b8588f9e053c13afa98ad1d71f333') in 0.161347 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Body.mat
+  artifactKey: Guid(b04ec245539099d489d1bec463781e74) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Body.mat using Guid(b04ec245539099d489d1bec463781e74) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9dfec07f8938dad51481057c0df35a01') in 0.041213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002767 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_CharacterController.cs
+  artifactKey: Guid(4524a01d9615771478418d3e824f1ecd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_CharacterController.cs using Guid(4524a01d9615771478418d3e824f1ecd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '70e2e323fcbba5903ef0fccdb741900a') in 0.029476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Trailer2/Trailer.FBX
+  artifactKey: Guid(5fd8097825926764f97f46ae32d49581) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Trailer2/Trailer.FBX using Guid(5fd8097825926764f97f46ae32d49581) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bac8f04ea5ee76e88a4584019555d960') in 0.094049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Wheels/Wheel_2.prefab
+  artifactKey: Guid(2c3f87e2c23da3d429eaed60c06f91af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Wheels/Wheel_2.prefab using Guid(2c3f87e2c23da3d429eaed60c06f91af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '789d16a5c1f4fba7620b305fc3bd2670') in 0.032004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000844 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/City.fbm/Container.png
+  artifactKey: Guid(6d6bdb9873de5bd4aaae80b77b2ddff9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/City.fbm/Container.png using Guid(6d6bdb9873de5bd4aaae80b77b2ddff9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'de7bd8d17c58eb24f704ebeb53bf97d8') in 0.055257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/City Textures/Alpha/Highway_Road_S.png
+  artifactKey: Guid(247a8e8a99a61664f84ec3d820b0e0d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/City Textures/Alpha/Highway_Road_S.png using Guid(247a8e8a99a61664f84ec3d820b0e0d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '595e7110b0ec3980e9bb56f69f5544af') in 0.067700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/Editor/SuspensionIcon.png
+  artifactKey: Guid(300abcd18ad44e94288e0bc6ec757852) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/Editor/SuspensionIcon.png using Guid(300abcd18ad44e94288e0bc6ec757852) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2a2ea267bdcc36239d048f2fb6e13a3b') in 0.053935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Mat/Truck_Lights_Reverse.mat
+  artifactKey: Guid(3c65430444415b14f952f0e63457ab9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Mat/Truck_Lights_Reverse.mat using Guid(3c65430444415b14f952f0e63457ab9c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7b831886fcb322cf0e891448df8a50f2') in 0.026948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/ReverseLight.prefab
+  artifactKey: Guid(188c477ab444228409c4a246c02a86bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/ReverseLight.prefab using Guid(188c477ab444228409c4a246c02a86bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a3413bab1b4d4fa469e681068d9aab7a') in 0.119721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.001825 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_TrailerAttachPoint.cs
+  artifactKey: Guid(8b2ffc80f995c0b419dc788eb942135f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_TrailerAttachPoint.cs using Guid(8b2ffc80f995c0b419dc788eb942135f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fbe06c08e46699b86917e8a2b2223e3d') in 0.045612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001291 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/SUV_High_Off.wav
+  artifactKey: Guid(98b669ab898a14144862469027b81407) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/SUV_High_Off.wav using Guid(98b669ab898a14144862469027b81407) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '86f0db3e1efca44dc810df2d977ce344') in 0.109064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_APIExample.cs
+  artifactKey: Guid(f7c5a9a38dbb3b0429683770769ac1f7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_APIExample.cs using Guid(f7c5a9a38dbb3b0429683770769ac1f7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '195c735e52cb82b1ac3b506d79fd1b13') in 0.053440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001168 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat
+  artifactKey: Guid(8d15fd6160de7eb4e9464cdf4cde2af7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat using Guid(8d15fd6160de7eb4e9464cdf4cde2af7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '77d3b3e28c7d5ad8f75e81d8a6d2d06f') in 0.027488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/RealisticCarControllerV3/Documentations/Realistic Car Controller RCC_Settings.pdf
+  artifactKey: Guid(e06e472ff07d2074a91a4ee81673c81c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Documentations/Realistic Car Controller RCC_Settings.pdf using Guid(e06e472ff07d2074a91a4ee81673c81c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '12f2dc3f8e6e8a7787fe62049f9ae163') in 0.025336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001415 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Wheels/Mat/Wheel2_Rim.mat
+  artifactKey: Guid(6f257ed7e23b5e0428a344df57d22e2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Wheels/Mat/Wheel2_Rim.mat using Guid(6f257ed7e23b5e0428a344df57d22e2e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ebf13649b93f07cea20f9ef648f78176') in 0.043519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Buggy_Low.wav
+  artifactKey: Guid(d49d23caac81ff5448552dc3faba0667) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Buggy_Low.wav using Guid(d49d23caac81ff5448552dc3faba0667) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2d51d705fe7b503f7ca15732c8b5ee72') in 0.091474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Spoilers/Mat/Spoiler_CarbonFiber.mat
+  artifactKey: Guid(8a7a6c32a5e60ee469e39cd7d9add892) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Spoilers/Mat/Spoiler_CarbonFiber.mat using Guid(8a7a6c32a5e60ee469e39cd7d9add892) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c46a39eb16eeb603a9f70ed3ef744ea2') in 0.035960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000867 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Truck&Van
+  artifactKey: Guid(64a51b7e4cdff6144bbacd120de89eb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Truck&Van using Guid(64a51b7e4cdff6144bbacd120de89eb3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '053e1d6e2b6dd63990c81b4bddcde98b') in 0.021002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RealisticCarControllerV3/Fixed Meshes/Jeep
+  artifactKey: Guid(87468ec1b6d4b4e47b762c7cfb29c74f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Fixed Meshes/Jeep using Guid(87468ec1b6d4b4e47b762c7cfb29c74f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '28e9d0603a191328850564bb7b84e4fd') in 0.038652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Dashboard/Background.tif
+  artifactKey: Guid(35c085708d9dd4c4b95307c95edb1c1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Dashboard/Background.tif using Guid(35c085708d9dd4c4b95307c95edb1c1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8069740c0505025bfd6c9b70d9047489') in 0.059425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_Grille.mat
+  artifactKey: Guid(a3e7d44b6b97aff43ac13d2087d18c17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_Grille.mat using Guid(a3e7d44b6b97aff43ac13d2087d18c17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '430428fee7d10396d9c83153b51489da') in 0.032354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_Lights_Headlight_HighBeam.mat
+  artifactKey: Guid(a15e2cc9004df6d4e99602a024f04221) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_Lights_Headlight_HighBeam.mat using Guid(a15e2cc9004df6d4e99602a024f04221) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '92b52574e2174a2bf2e76fb6bd2075d3') in 0.035115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat/Color_2.mat
+  artifactKey: Guid(fad9acaac9c746945a4c7d6a50a5701a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat/Color_2.mat using Guid(fad9acaac9c746945a4c7d6a50a5701a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '82f271d59eaf589006d53ed480e93d45') in 0.034041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001242 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Windows.mat
+  artifactKey: Guid(e989a1931eb233d4a9f8bd70d3aab3f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Windows.mat using Guid(e989a1931eb233d4a9f8bd70d3aab3f4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd360d90c330abb7171255ec27d827c9c') in 0.029988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/HoodCamera.prefab
+  artifactKey: Guid(a28e2d33ee4eec642be5568debd291ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/HoodCamera.prefab using Guid(a28e2d33ee4eec642be5568debd291ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd6479b8be5584edac801701aa6607678') in 0.084451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine
+  artifactKey: Guid(60ed7129f820ee645aa27088470e4a48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine using Guid(60ed7129f820ee645aa27088470e4a48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2e02cd90407949ca3670fd9a6035c875') in 0.040068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001458 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_UI_Color.cs
+  artifactKey: Guid(78f6daa7642d3ae49a588d497154d92e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_UI_Color.cs using Guid(78f6daa7642d3ae49a588d497154d92e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cdcdd1c048f2bf379688d7d4f7e22c01') in 0.032543 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.010064 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Buggy/Buggy_Tire.mat
+  artifactKey: Guid(49b5a77f1e7c91341bac503dcb48fa0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Buggy/Buggy_Tire.mat using Guid(49b5a77f1e7c91341bac503dcb48fa0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4df0171a73d3f360f13a4498fec52066') in 0.034297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001208 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/Editor/CPUIcon.png
+  artifactKey: Guid(24838cad1162f174bb056435462469d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/Editor/CPUIcon.png using Guid(24838cad1162f174bb056435462469d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7011341fa4db814b8e93156eee79f5af') in 0.065357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000821 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/City.fbm/Skyscrapper_10.bmp
+  artifactKey: Guid(b252613b5c5ac2d4691853605bcaf6eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/City.fbm/Skyscrapper_10.bmp using Guid(b252613b5c5ac2d4691853605bcaf6eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7c1cd5170156c54e26c354ac402b0417') in 0.065195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002387 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/City Textures/Mixed.png
+  artifactKey: Guid(77f607a3eb79b1d45a53a8525b3eaf33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/City Textures/Mixed.png using Guid(77f607a3eb79b1d45a53a8525b3eaf33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '85190e9e1c65e13fca17c992313d2324') in 0.051400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004361 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Crashers/Tex/Stripes_Straight.png
+  artifactKey: Guid(320eb47ea9610614eb87e7252531c490) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Crashers/Tex/Stripes_Straight.png using Guid(320eb47ea9610614eb87e7252531c490) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '00dfc7e27e99082f5e88250541dcb4bd') in 0.060465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000877 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36
+  artifactKey: Guid(993889be4c7c8db4499b8335dc674561) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36 using Guid(993889be4c7c8db4499b8335dc674561) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '719a607ef146b0ef1a4ff737e2c9af89') in 0.028545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Tex/Calota.png
+  artifactKey: Guid(50d2ea95b0196df4f981d3e70b28cf8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Tex/Calota.png using Guid(50d2ea95b0196df4f981d3e70b28cf8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '88a4a2c151012213733b2408c6171d94') in 0.067519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000891 seconds.
+  path: Assets/RealisticCarControllerV3/Particle Materials/ParticleDebris.mat
+  artifactKey: Guid(bd7cba7892067a44eb23d9ebbb79a001) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Particle Materials/ParticleDebris.mat using Guid(bd7cba7892067a44eb23d9ebbb79a001) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ca1ff158d1e0c0eaa50fdf8c0b985284') in 0.029467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001072 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Concrete Squares.mat
+  artifactKey: Guid(a9f0cad5b1e047948a584b01135f60fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Concrete Squares.mat using Guid(a9f0cad5b1e047948a584b01135f60fa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7e3e23ff24f62569cfb87180c5624723') in 0.040642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/RCCSkidmarks_Sand.prefab
+  artifactKey: Guid(d9297d0c600831349ab30b1c051467f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/RCCSkidmarks_Sand.prefab using Guid(d9297d0c600831349ab30b1c051467f3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aab78fed82a9ab79e33acfc163b7db97') in 0.049310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RealisticCarControllerV3/Editor/Customization/RCC_VehicleUpgrade_SpoilerEditor.cs
+  artifactKey: Guid(ecc8787e966ab45469842e8aeeb867e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Editor/Customization/RCC_VehicleUpgrade_SpoilerEditor.cs using Guid(ecc8787e966ab45469842e8aeeb867e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'feb3a438aa728e9815e48ab0ae50c2cd') in 0.036645 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/LightTrail.mat
+  artifactKey: Guid(f5003244d3452fa46ab0ec9370a6ec31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/LightTrail.mat using Guid(f5003244d3452fa46ab0ec9370a6ec31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c3b84b6a9371f33952ff7925d06c0bf8') in 0.027574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/RealisticCarControllerV3/Documentations/Realistic Car Controller RCC_GroundMaterials.pdf
+  artifactKey: Guid(6d7753903751c2d4288868fdcbc1eaba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Documentations/Realistic Car Controller RCC_GroundMaterials.pdf using Guid(6d7753903751c2d4288868fdcbc1eaba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'bf957914cb0ac6345c9df32a4eafc302') in 0.031639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Trailer2/Mat/Wheel.mat
+  artifactKey: Guid(5cb3e7defcb66ea4588a9a49977a6691) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Trailer2/Mat/Wheel.mat using Guid(5cb3e7defcb66ea4588a9a49977a6691) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e04a0c01b6e1c08fe34d9a012c0628a3') in 0.054039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004230 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Sport/Sport1_Low_Off.wav
+  artifactKey: Guid(366b26fc4b8d18b42ab0239f5df593b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Sport/Sport1_Low_Off.wav using Guid(366b26fc4b8d18b42ab0239f5df593b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ccac61542cfcac88b7d676d6ca157283') in 0.099279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_Chrome.mat
+  artifactKey: Guid(2c75c396484963c418a8c0bc7e2c8040) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_Chrome.mat using Guid(2c75c396484963c418a8c0bc7e2c8040) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fdfd845841ee345ceeaa5d8b96130bca') in 0.045088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001123 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Crashers/Mat/Metal.mat
+  artifactKey: Guid(752687beca8cae2418d0ca5ea97e7ce7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Crashers/Mat/Metal.mat using Guid(752687beca8cae2418d0ca5ea97e7ce7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '409d4c3ffa69ae3006bb74e49e4084af') in 0.035594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007655 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Jeep/Mat/Head Lights.mat
+  artifactKey: Guid(d2d468bb9d58bd044a4ad722d5ad7eda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Jeep/Mat/Head Lights.mat using Guid(d2d468bb9d58bd044a4ad722d5ad7eda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a30e868fbf9502649661d5279314294b') in 0.038573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005070 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Jeep
+  artifactKey: Guid(35b1b9df9a387d24facaacdc6e9b0e73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Jeep using Guid(35b1b9df9a387d24facaacdc6e9b0e73) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd85a0fb103f6d20a1666e28162f066d5') in 0.028537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000632 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Dashboard/Boost.png
+  artifactKey: Guid(884b50532e2c6f64d9b2a8c11dc7494d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Dashboard/Boost.png using Guid(884b50532e2c6f64d9b2a8c11dc7494d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '14278fb932ddd1f76cd48c70cdba42c2') in 0.072341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002344 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Environment/Tree/Mat
+  artifactKey: Guid(c29c0ec1e33ab92469cb695065be35fe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Environment/Tree/Mat using Guid(c29c0ec1e33ab92469cb695065be35fe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f059edc4d048f22d7c46a774937d522') in 0.029163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_AIO.cs
+  artifactKey: Guid(c434bd80684e08e42875240351f8d25d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_AIO.cs using Guid(c434bd80684e08e42875240351f8d25d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6ccdd58e590a9100643678ba58c01abe') in 0.033970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004595 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Wheel/SandSkid.wav
+  artifactKey: Guid(59e038dfc28ad83419aff1c81f974134) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Wheel/SandSkid.wav using Guid(59e038dfc28ad83419aff1c81f974134) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '97747264bc06790eb7073a78433fb4be') in 0.102409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_CustomizationLoadout.cs
+  artifactKey: Guid(de20e2086fa3b5642a464c251c3a0c87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_CustomizationLoadout.cs using Guid(de20e2086fa3b5642a464c251c3a0c87) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '960d8ff3a759f76dfa260e8121f300f0') in 0.035618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004951 seconds.
+  path: Assets/RealisticCarControllerV3/Physics Materials/RCCTerrainPhysics3.physicMaterial
+  artifactKey: Guid(b87561d43d3bd794696695748df84174) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Physics Materials/RCCTerrainPhysics3.physicMaterial using Guid(b87561d43d3bd794696695748df84174) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3845253e6fb0a36231e3f3347d2c470f') in 0.034316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005824 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Gear/GearShifting3.WAV
+  artifactKey: Guid(d16b0aad793dafa4fb78adaae796fbfe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Gear/GearShifting3.WAV using Guid(d16b0aad793dafa4fb78adaae796fbfe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f638c59a30ac47f0c236473a16d63f15') in 0.107120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000915 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Wheel/WheelDeflate.wav
+  artifactKey: Guid(faa704d83029a9647a2363b2237e4e19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Wheel/WheelDeflate.wav using Guid(faa704d83029a9647a2363b2237e4e19) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7d5ebe0eee9b9f395e45f0e2f01ea622') in 0.211784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Container/Mat/Steel.mat
+  artifactKey: Guid(a0837ccc26805184da2f6b221ab2a304) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Container/Mat/Steel.mat using Guid(a0837ccc26805184da2f6b221ab2a304) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f78787b351e784390907698dc8392fa0') in 0.032639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.001408 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Wheels/Wheel_4.prefab
+  artifactKey: Guid(5efa4ef47b4e24548ada9449d9cc529c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Wheels/Wheel_4.prefab using Guid(5efa4ef47b4e24548ada9449d9cc529c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e91a92708d8b2d6fe6d2ce169429b554') in 0.026931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.001172 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/RCC Assets
+  artifactKey: Guid(e0d359db9ad6f7e4abdd5ec4bf104b1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/RCC Assets using Guid(e0d359db9ad6f7e4abdd5ec4bf104b1c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f6b67b7800296c5f07556d9bd07a2c15') in 0.024578 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_Plastic.mat
+  artifactKey: Guid(53039501342dc224f9448c03ca5dd116) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/CTR/Mat/CTR_Plastic.mat using Guid(53039501342dc224f9448c03ca5dd116) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'dec0ad73ebbe58e96fdd804e3e712bed') in 0.038141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Particles/RCCWheelSlipAsphalt.prefab
+  artifactKey: Guid(3c696ed2c46f7e4428d31d0bf5d0fd84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Particles/RCCWheelSlipAsphalt.prefab using Guid(3c696ed2c46f7e4428d31d0bf5d0fd84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '7e63481caedb5bb6e81a2c2521a28cf9') in 0.155683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Misc/Reverse.wav
+  artifactKey: Guid(504366e8a8a713b43b676259cd5a7b58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Misc/Reverse.wav using Guid(504366e8a8a713b43b676259cd5a7b58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f3a73bdcd1ac73ed666396a197659933') in 0.105528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/RealisticCarControllerV3/Lens Cookies/LightSoftCookie.tif
+  artifactKey: Guid(a9fb99d0b30fd284b9ade2773fa8f63d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Lens Cookies/LightSoftCookie.tif using Guid(a9fb99d0b30fd284b9ade2773fa8f63d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f3f882d51242cdb6977455577edf1d1') in 0.078083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Vehicle Textures/Normal
+  artifactKey: Guid(63a8b675189dbd24b848e628d474f8e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Vehicle Textures/Normal using Guid(63a8b675189dbd24b848e628d474f8e8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a286131b419945eee19e80b737a15b4e') in 0.038065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002234 seconds.
+  path: Assets/RealisticCarControllerV3/Skybox
+  artifactKey: Guid(d4634f00d30f3b44dbe2583690f3b937) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Skybox using Guid(d4634f00d30f3b44dbe2583690f3b937) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ac60f658ea8268b99b734c5c170eb040') in 0.028587 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.004520 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Crash
+  artifactKey: Guid(fc8f60585adb6584b89d1a0640ddddba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Crash using Guid(fc8f60585adb6584b89d1a0640ddddba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f65876f7beae86f8c9208b5c580f641e') in 0.034446 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.008496 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Mat/Truck_Chrome.mat
+  artifactKey: Guid(7d11d68798e58f7429f99fba87409069) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Mat/Truck_Chrome.mat using Guid(7d11d68798e58f7429f99fba87409069) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f3d89ea09f97b27ddc2c9a0aa01bc474') in 0.042477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/BrakeLight.prefab
+  artifactKey: Guid(40648ef4ebef26d4c9cc0663c2f08e5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/BrakeLight.prefab using Guid(40648ef4ebef26d4c9cc0663c2f08e5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5cfdf778fc99b63b09a6216442cf0b73') in 0.075920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.002707 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat
+  artifactKey: Guid(cdaa3e388c690134fb1b3a0215ca6208) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/F1/Mat using Guid(cdaa3e388c690134fb1b3a0215ca6208) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8f8557ef8783039e13eaa3a9121e39cd') in 0.026758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002466 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/Editor/SteerIcon.png
+  artifactKey: Guid(1590f5aa89ad835428d2fd349d8e17d4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/Editor/SteerIcon.png using Guid(1590f5aa89ad835428d2fd349d8e17d4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6b9bf9d85c9a79892d927cdbab6b1b17') in 0.065735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002376 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_UI_Spoiler.cs
+  artifactKey: Guid(b5f92872ea5db9244ae741939da13b6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_UI_Spoiler.cs using Guid(b5f92872ea5db9244ae741939da13b6b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3471fd3ff31674e03484403e2b0663de') in 0.032223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002392 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Foliage.mat
+  artifactKey: Guid(204ffe03dccb09d4f83c15f73d217c9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Foliage.mat using Guid(204ffe03dccb09d4f83c15f73d217c9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '31dc8cbcf7d6c2ceb0253221537fdf80') in 0.031529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Road.FBX
+  artifactKey: Guid(8afe7dd398d71f14b80cf97af9b95213) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Road.FBX using Guid(8afe7dd398d71f14b80cf97af9b95213) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2d48824336d8d6e2269f439ea4735218') in 0.113760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.002274 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Materials/Dev.mat
+  artifactKey: Guid(3daa9d3919a99444fb9c089c3ae0f7ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Materials/Dev.mat using Guid(3daa9d3919a99444fb9c089c3ae0f7ea) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd1b26c1bdd747fea79b5ab4b8774edd3') in 0.130207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Tex/E46_Carpet.png
+  artifactKey: Guid(9884aa583ea459345a1dc20716cbef90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Tex/E46_Carpet.png using Guid(9884aa583ea459345a1dc20716cbef90) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f380ffbd69bc1ae3fd4200286e6b25c9') in 0.047288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Van.prefab
+  artifactKey: Guid(61a11c6d1b0a3654cb7a9e2137d31f21) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Van.prefab using Guid(61a11c6d1b0a3654cb7a9e2137d31f21) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e83d75e2fbfbf26833771b4baeba3871') in 0.300533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 181
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Crashers
+  artifactKey: Guid(d91d3a5d74c29c242b268abf0b9c1cd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Crashers using Guid(d91d3a5d74c29c242b268abf0b9c1cd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '5ec312ffbd534a563b111ffd0a815637') in 0.025568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Truck&Van/Truck.wav
+  artifactKey: Guid(49a86b6cfff196e4c8b6929268cb4cff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Truck&Van/Truck.wav using Guid(49a86b6cfff196e4c8b6929268cb4cff) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd8145cf8fa37c78e8da5698351ad7077') in 0.208719 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Dashboard/BoostNeedle.png
+  artifactKey: Guid(aff4127306388e74c9a2c9259e44afc4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Dashboard/BoostNeedle.png using Guid(aff4127306388e74c9a2c9259e44afc4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'eb0741a0a3085a0df1f2d0c7d861aea1') in 0.110397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Tex/Window_Big.bmp
+  artifactKey: Guid(d937636147fe0ad4a84b6ce839ac3aa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Tex/Window_Big.bmp using Guid(d937636147fe0ad4a84b6ce839ac3aa6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8fd35582493f1eaca29ac9d0f4302d36') in 0.050853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001821 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/SUV_High_On.wav
+  artifactKey: Guid(9cbb60cabb359d345916960af3221023) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/SUV_High_On.wav using Guid(9cbb60cabb359d345916960af3221023) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd4926c703c21d6e91a666963d2abea92') in 0.096027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001321 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36/Mat/M3_E36 Body.mat
+  artifactKey: Guid(083a3a8859d96e84aaa896578f60191b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/M3_E36/Mat/M3_E36 Body.mat using Guid(083a3a8859d96e84aaa896578f60191b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1f60adc232f9993d673390e237550b78') in 0.033598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003343 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Buggy/Buggy.FBX
+  artifactKey: Guid(cdd7028a2c11950459846f7230726e0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Buggy/Buggy.FBX using Guid(cdd7028a2c11950459846f7230726e0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '218318693967d5a353274201066ac959') in 0.132114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 74
+========================================================================
+Received Import Request.
+  Time since last request: 0.015074 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/E30/Mat/E30_EngineCover.mat
+  artifactKey: Guid(cc9ed93571678b94a8928931b2986bdb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/E30/Mat/E30_EngineCover.mat using Guid(cc9ed93571678b94a8928931b2986bdb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'fc279e063d9ca899c98aaecd8c352703') in 0.033160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001566 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Sport/Sport2_Med_Off.wav
+  artifactKey: Guid(32ba3692c89893b46ae703a746208297) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Sport/Sport2_Med_Off.wav using Guid(32ba3692c89893b46ae703a746208297) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'af7b904bdba0d9ca04249be409a52988') in 0.117288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Crashers/Tex/Metal.png
+  artifactKey: Guid(e9c0ee7aa7ffe494487f326761999d58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Crashers/Tex/Metal.png using Guid(e9c0ee7aa7ffe494487f326761999d58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ad31b0565cead1d836fa55fbcaebbb44') in 0.063530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/RealisticCarControllerV3/Models/SpikeStrip/Mat/SpikeStrip.mat
+  artifactKey: Guid(c3eac15073d5a0c418a0d9e05538bc4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/SpikeStrip/Mat/SpikeStrip.mat using Guid(c3eac15073d5a0c418a0d9e05538bc4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '63aa63ab4a90853046412d87451bafac') in 0.053118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001447 seconds.
+  path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City (Car Selection with Loaded Scene).unity
+  artifactKey: Guid(4ed4684c5573f9e45b300ebeababe238) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Demo Scenes/RCC City (Car Selection with Loaded Scene).unity using Guid(4ed4684c5573f9e45b300ebeababe238) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '387f61c0504dfb29968df303a2537374') in 0.040541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002989 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Garage/Mat/Garage_LightBody.mat
+  artifactKey: Guid(1f7db02757fdd8645bf028dbf2d7883c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Garage/Mat/Garage_LightBody.mat using Guid(1f7db02757fdd8645bf028dbf2d7883c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f7c410089e8fa159009eaca888f3908b') in 0.036275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000953 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Gear/GearShifting5.WAV
+  artifactKey: Guid(f5993d9cca0a2804f93ce20e421cbf04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Gear/GearShifting5.WAV using Guid(f5993d9cca0a2804f93ce20e421cbf04) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'aec1bdf83bbbe3f5f7092720115a25bb') in 0.125111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/RealisticCarControllerV3/Fixed Meshes/Jeep/Right Door(Clone).mesh
+  artifactKey: Guid(24c9df4b23c3bb646a83211ed84c6210) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Fixed Meshes/Jeep/Right Door(Clone).mesh using Guid(24c9df4b23c3bb646a83211ed84c6210) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9ceac4d746df54d5a0450aa087eb26ae') in 0.035890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Truck.prefab
+  artifactKey: Guid(850a87f0a0dbde941a5f90e91ca94920) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/Truck.prefab using Guid(850a87f0a0dbde941a5f90e91ca94920) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'cd9edc107d9fba737f2e1ece44687a50') in 0.278343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 174
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/RealisticCarControllerV3/Sounds/Engine/Generic/Generic_Med.wav
+  artifactKey: Guid(139fd09d7108a514b8be04a5ebaa7c17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Sounds/Engine/Generic/Generic_Med.wav using Guid(139fd09d7108a514b8be04a5ebaa7c17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '02f5d32e071114efa520aca9fa75e8a4') in 0.105076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/UI/RCCCanvasInfo.prefab
+  artifactKey: Guid(a4903eeb9314e9449ac578d147f1a75a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/UI/RCCCanvasInfo.prefab using Guid(a4903eeb9314e9449ac578d147f1a75a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '46f1330253c98e573cd1bf9a3cfa96fb') in 0.062012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 122
+========================================================================
+Received Import Request.
+  Time since last request: 0.002312 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Jeep/Mat/Chrome.mat
+  artifactKey: Guid(6302ecb129e28c44b9601fc4521b82db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Jeep/Mat/Chrome.mat using Guid(6302ecb129e28c44b9601fc4521b82db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '243746414032bf5f3575ec4ffa97632a') in 0.119284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Tex/Skyscrapper_5.bmp
+  artifactKey: Guid(55d10392a70857641aa3fcb480734ae5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Tex/Skyscrapper_5.bmp using Guid(55d10392a70857641aa3fcb480734ae5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f1e78e3f1d68b54fb4169fcc742a5f69') in 0.046825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_Skidmarks.cs
+  artifactKey: Guid(eb325412de0d9df4e8014c7de65c9795) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_Skidmarks.cs using Guid(eb325412de0d9df4e8014c7de65c9795) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4b452a604aa5db667ac68d431416f1be') in 0.036106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002773 seconds.
+  path: Assets/RealisticCarControllerV3/Demo Scenes/RCC Blank Customization Scene.unity
+  artifactKey: Guid(eb4e8836a7adf21429a977f49b80f0dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Demo Scenes/RCC Blank Customization Scene.unity using Guid(eb4e8836a7adf21429a977f49b80f0dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '82332d95aee45ce0142f8bc54a893ad4') in 0.022372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/Customization Setups/Sirens.prefab
+  artifactKey: Guid(04569c5ad38516c4ca7cb2b87014eaab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/Customization Setups/Sirens.prefab using Guid(04569c5ad38516c4ca7cb2b87014eaab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '665bd899c2b0b1ac8d76090574ec4673') in 0.043471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 58
+========================================================================
+Received Import Request.
+  Time since last request: 0.002246 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/Mat/Window Big.mat
+  artifactKey: Guid(3d7445a9c7e51b24ba72bd5f4b43f14e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/Mat/Window Big.mat using Guid(3d7445a9c7e51b24ba72bd5f4b43f14e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a3cd73bfd61ea27aa5d5a7cd84489d5e') in 0.035836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000914 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Pickup
+  artifactKey: Guid(088f4e5b473150440975d17b51ad4346) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Pickup using Guid(088f4e5b473150440975d17b51ad4346) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e10c9ef6b844558816fdb8861a6989af') in 0.030366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001084 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_InteriorButtons.mat
+  artifactKey: Guid(064757c4140b2d949af78266c1d3da0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/E46_New/Mat/E46_InteriorButtons.mat using Guid(064757c4140b2d949af78266c1d3da0c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '6743ae133f941116a07ff63a77733bed') in 0.032844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/RealisticCarControllerV3/Resources
+  artifactKey: Guid(cc03cd6c83502974eb725eac87f93d25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources using Guid(cc03cd6c83502974eb725eac87f93d25) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3003095dcff82a4034c255306195df30') in 0.027795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002393 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Interior.mat
+  artifactKey: Guid(152ac1482130e814f8ac4a63532c6f3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Coupe/Mat/Interior.mat using Guid(152ac1482130e814f8ac4a63532c6f3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '3ab154ccb65a2066a965e5b25f1f8f67') in 0.035473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Garage/Mat/Garage_Panel.mat
+  artifactKey: Guid(f5894926c3c5df14bb043966dfa0f2a8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Garage/Mat/Garage_Panel.mat using Guid(f5894926c3c5df14bb043966dfa0f2a8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b93f9e6e465789aed70917930b5cc6eb') in 0.043911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001365 seconds.
+  path: Assets/RealisticCarControllerV3/Editor/RCC_InitLoad.cs
+  artifactKey: Guid(ec77af92fa104b041aaabe59da503264) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Editor/RCC_InitLoad.cs using Guid(ec77af92fa104b041aaabe59da503264) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b9df634f0c8dae5a8242038de30f4875') in 0.056460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000768 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Mobile Textures/JoystickHandle.png
+  artifactKey: Guid(cfedd546bbecccf4582b5ad7aead5800) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Mobile Textures/JoystickHandle.png using Guid(cfedd546bbecccf4582b5ad7aead5800) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'c91676036f55f9dfab6d09dd9631900b') in 0.081526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004961 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Small Trailer/Mat/Pin.mat
+  artifactKey: Guid(1329a44bc63a3b545b927cf991643c7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Small Trailer/Mat/Pin.mat using Guid(1329a44bc63a3b545b927cf991643c7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '0c543008273ad968f000792ed3dc6ed8') in 0.029235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002942 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Materials/Black.mat
+  artifactKey: Guid(cd31f6a96337cbd43bbd7bc525d70347) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Materials/Black.mat using Guid(cd31f6a96337cbd43bbd7bc525d70347) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8e5131ca2e22ae06ae781638c8c4e0e8') in 0.033595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000475 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Spoilers/Mat/Spoiler_Paint.mat
+  artifactKey: Guid(443c0a0960afad44787027e5b29c809b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Spoilers/Mat/Spoiler_Paint.mat using Guid(443c0a0960afad44787027e5b29c809b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '539d1ce246b400ff23ef96b1f576f8a8') in 0.043312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_CarControllerV3.cs
+  artifactKey: Guid(c25271813931d814680ab7c84ef90710) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_CarControllerV3.cs using Guid(c25271813931d814680ab7c84ef90710) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'de3c27e068dbccc66b37cb3dd19bae61') in 0.027179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Trailer2
+  artifactKey: Guid(523c8914e0d44cf43afb53179dcb9b51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Trailer2 using Guid(523c8914e0d44cf43afb53179dcb9b51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '2e35feeed5ee5cac64dd00e36ba4b2d1') in 0.027595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/RealisticCarControllerV3/Models/City/City.fbm/Fencing_Chain.png
+  artifactKey: Guid(293ec17907d6fc34e86c89a938ed6ba7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/City/City.fbm/Fencing_Chain.png using Guid(293ec17907d6fc34e86c89a938ed6ba7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'd906e3b6aa89535e26445f381c0ca798') in 0.055495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Upgrades/Logo_Customization.png
+  artifactKey: Guid(dd8967bffc7f27948a6d3b60bf5dd443) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Upgrades/Logo_Customization.png using Guid(dd8967bffc7f27948a6d3b60bf5dd443) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '8080b6caf9081d75eebe6c4e2393deb1') in 0.068718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003490 seconds.
+  path: Assets/RealisticCarControllerV3/Fixed Meshes/M3_E46/Trunk(Clone).mesh
+  artifactKey: Guid(b7ebbe1ceb8ad5c40b9b77e1ea289de5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Fixed Meshes/M3_E46/Trunk(Clone).mesh using Guid(b7ebbe1ceb8ad5c40b9b77e1ea289de5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e37930cdb3f732aa316647801b8ef485') in 0.031073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Mat/Truck_Body.mat
+  artifactKey: Guid(d268bedfe8b5b9d4684b772c8135598b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Vehicles/Truck/Mat/Truck_Body.mat using Guid(d268bedfe8b5b9d4684b772c8135598b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '66c42670ed9059309f253099b108da05') in 0.042025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/RealisticCarControllerV3/Scripts/RCC_ColorPickerBySliders.cs
+  artifactKey: Guid(0357d8b11b6651c4c8146491eb5ce0ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Scripts/RCC_ColorPickerBySliders.cs using Guid(0357d8b11b6651c4c8146491eb5ce0ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ce13ed1f2982bf35e003fd0bbd2732cf') in 0.038527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000572 seconds.
+  path: Assets/RealisticCarControllerV3/Demo Scenes/RCC City/NavMesh.asset
+  artifactKey: Guid(ef425706c4ed2734d9addbeb076a83cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Demo Scenes/RCC City/NavMesh.asset using Guid(ef425706c4ed2734d9addbeb076a83cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e421355c73e90a56163f52c628344920') in 0.045046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003991 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/RCCSkidmarksManager.prefab
+  artifactKey: Guid(a107dc7aa77e84f4d8cf9888def4fe64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Prefabs/RCCSkidmarksManager.prefab using Guid(a107dc7aa77e84f4d8cf9888def4fe64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '62fe5cda20a9b2d50d4333e909162c65') in 0.049457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.002793 seconds.
+  path: Assets/RealisticCarControllerV3/Models/Roads/Mat/Dirt Road.mat
+  artifactKey: Guid(dacc0e1d5e47ade44aca02aab276ab08) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Models/Roads/Mat/Dirt Road.mat using Guid(dacc0e1d5e47ade44aca02aab276ab08) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '4f2f26de7fcd982d05611d949d5e123c') in 0.035945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002923 seconds.
+  path: Assets/RealisticCarControllerV3/Textures/Particles
+  artifactKey: Guid(55ce68cc42640724ca4ac6ab1faa78e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Textures/Particles using Guid(55ce68cc42640724ca4ac6ab1faa78e3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'e3363df4a26dc9cb56977b28dfc188d8') in 0.026085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002011 seconds.
+  path: Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/M3_E46_New.prefab
+  artifactKey: Guid(f5b24270dd3a52e4180206467601e919) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/RealisticCarControllerV3/Prefabs/Demo Vehicles/M3_E46_New.prefab using Guid(f5b24270dd3a52e4180206467601e919) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '03431aee055dd638249472bf8d7671fa') in 0.365094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 382
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
