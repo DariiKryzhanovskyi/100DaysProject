@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -30,8 +30,6 @@ public class RCC_CarSelectionExample : MonoBehaviour {
         //	Getting RCC Camera.
         if (!RCCCamera)
             RCCCamera = RCC_SceneManager.Instance.activePlayerCamera;
-
-        selectedIndex = PlayerPrefs.GetInt("SelectedRCCVehicle", 0);
 
         // First, we are instantiating all vehicles and store them in _spawnedVehicles list.
         CreateVehicles();

@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -25,7 +25,6 @@ public class RCC_SceneGUI : EditorWindow {
     static Texture2D brakelightIcon;
     static Texture2D reverselightIcon;
     static Texture2D indicatorlightIcon;
-    static Texture2D interiorlightIcon;
     static Texture2D exhaustIcon;
     static Texture2D mirrorIcon;
 
@@ -41,28 +40,36 @@ public class RCC_SceneGUI : EditorWindow {
         brakelightIcon = Resources.Load("Editor/BrakelightIcon", typeof(Texture2D)) as Texture2D;
         reverselightIcon = Resources.Load("Editor/ReverselightIcon", typeof(Texture2D)) as Texture2D;
         indicatorlightIcon = Resources.Load("Editor/IndicatorlightIcon", typeof(Texture2D)) as Texture2D;
-        interiorlightIcon = Resources.Load("Editor/InteriorlightIcon", typeof(Texture2D)) as Texture2D;
         exhaustIcon = Resources.Load("Editor/ExhaustIcon", typeof(Texture2D)) as Texture2D;
         mirrorIcon = Resources.Load("Editor/MirrorIcon", typeof(Texture2D)) as Texture2D;
 
     }
 
+#if RCC_SHORTCUTS
+    [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Enable In-Scene Buttons #e", false, 5000)]
+    public static void Enable() {
+
+        GetImages();
+
+        if (!enabledMenu)
+            SceneView.duringSceneGui += OnScene;
+
+    }
+#else
     [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Enable In-Scene Buttons", false, 5000)]
-    [MenuItem("GameObject/BoneCracker Games/Realistic Car Controller/Enable In-Scene Buttons", false, 5000)]
     public static void Enable() {
 
         if (enabled)
             return;
 
         GetImages();
-
         SceneView.duringSceneGui += OnScene;
         enabled = true;
 
     }
+#endif
 
     [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Disable In-Scene Buttons", false, 5000)]
-    [MenuItem("GameObject/BoneCracker Games/Realistic Car Controller/Disable In-Scene Buttons", false, 5000)]
     public static void Disable() {
 
         SceneView.duringSceneGui -= OnScene;
@@ -91,6 +98,8 @@ public class RCC_SceneGUI : EditorWindow {
 
         if (GUILayout.Button(new GUIContent(canvasIcon, "Add / Select RCC Canvas")))
             RCC_EditorWindows.CreateRCCCanvas();
+
+
 
         Color defColor = GUI.color;
         GUI.color = Color.red;
@@ -123,20 +132,17 @@ public class RCC_SceneGUI : EditorWindow {
                 if (GUILayout.Button(new GUIContent(wheelCameraIcon, "Add/Select Wheel Camera attached to selected vehicle")))
                     RCC_EditorWindows.CreateWheelCamera();
 
-                if (GUILayout.Button(new GUIContent(headlightIcon, "Add head lights to selected vehicle")))
+                if (GUILayout.Button(new GUIContent(headlightIcon, "Add headlights to selected vehicle")))
                     RCC_EditorWindows.CreateHeadLight();
 
-                if (GUILayout.Button(new GUIContent(brakelightIcon, "Add brake lights to selected vehicle")))
+                if (GUILayout.Button(new GUIContent(brakelightIcon, "Add brakelights to selected vehicle")))
                     RCC_EditorWindows.CreateBrakeLight();
 
-                if (GUILayout.Button(new GUIContent(reverselightIcon, "Add reverse lights to selected vehicle")))
+                if (GUILayout.Button(new GUIContent(reverselightIcon, "Add reverselights to selected vehicle")))
                     RCC_EditorWindows.CreateReverseLight();
 
-                if (GUILayout.Button(new GUIContent(indicatorlightIcon, "Add indicator lights  to selected vehicle")))
+                if (GUILayout.Button(new GUIContent(indicatorlightIcon, "Add Indicatorlights to selected vehicle")))
                     RCC_EditorWindows.CreateIndicatorLight();
-
-                if (GUILayout.Button(new GUIContent(interiorlightIcon, "Add interior lights to selected vehicle")))
-                    RCC_EditorWindows.CreateInteriorLight();
 
                 if (GUILayout.Button(new GUIContent(exhaustIcon, "Add exhaust attached to selected vehicle")))
                     RCC_EditorWindows.CreateExhaust();

@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -30,6 +30,29 @@ public class RCC_SettingsEditor : Editor {
     private bool foldSFX = false;
     private bool foldOptimization = false;
     private bool foldTagsAndLayers = false;
+
+    public bool RCC_Shortcuts {
+
+        get {
+
+            bool _bool = RCC_Settings.Instance.useShortcuts;
+            return _bool;
+
+        }
+
+        set {
+
+            bool _bool = RCC_Settings.Instance.useShortcuts;
+
+            if (_bool == value)
+                return;
+
+            RCC_Settings.Instance.useShortcuts = value;
+            RCC_SetScriptingSymbol.SetEnabled("RCC_SHORTCUTS", value);
+
+        }
+
+    }
 
     private void OnEnable() {
 
@@ -99,6 +122,11 @@ public class RCC_SettingsEditor : Editor {
 
             EditorGUILayout.PropertyField(serializedObject.FindProperty("useFixedWheelColliders"), new GUIContent("Use Fixed WheelColliders", "Improves stability by increasing mass of the WheelColliders."));
             EditorGUILayout.PropertyField(serializedObject.FindProperty("lockAndUnlockCursor"), new GUIContent("Locks Cursor", "Locks Cursor."));
+
+            RCC_Shortcuts = EditorGUILayout.Toggle(new GUIContent("Use Editor Shortcuts", "It will enable shortcuts. Shift + E = In-Scene GUI, Shift + R = Add Main Car Controller, Shift + S = RCC Settings."), RCC_Shortcuts);
+
+            if (RCC_Shortcuts)
+                EditorGUILayout.HelpBox("Shift + E = In-Scene GUI, Shift + R = Add Main Car Controller, Shift + S = RCC Settings.", MessageType.None, true);
 
             EditorGUILayout.EndVertical();
 
@@ -353,7 +381,6 @@ public class RCC_SettingsEditor : Editor {
         EditorGUILayout.PropertyField(serializedObject.FindProperty("brakeLights"), new GUIContent("Brake Lights"), false);
         EditorGUILayout.PropertyField(serializedObject.FindProperty("reverseLights"), new GUIContent("Reverse Lights"), false);
         EditorGUILayout.PropertyField(serializedObject.FindProperty("indicatorLights"), new GUIContent("Indicator Lights"), false);
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("interiorLights"), new GUIContent("Interior Lights"), false);
         EditorGUILayout.PropertyField(serializedObject.FindProperty("lightTrailers"), new GUIContent("Light Trailers"), false);
         EditorGUILayout.PropertyField(serializedObject.FindProperty("mirrors"), new GUIContent("Mirrors"), false);
         EditorGUILayout.PropertyField(serializedObject.FindProperty("skidmarksManager"), new GUIContent("Skidmarks Manager"), false);

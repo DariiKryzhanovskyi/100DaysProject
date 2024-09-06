@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -15,6 +15,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using System.IO;
 
+[InitializeOnLoad]
 public class RCC_FixAxisWindow : EditorWindow {
 
     private GUISkin skin;

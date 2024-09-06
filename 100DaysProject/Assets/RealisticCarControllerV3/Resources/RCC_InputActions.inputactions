@@ -60,15 +60,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Interior Lights",
-                    "type": "Button",
-                    "id": "824b9e50-4e4f-45c8-ab0b-d979354e8d3a",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "High Beam Lights",
                     "type": "Button",
                     "id": "ce045397-f3db-4d56-a9ab-f15b8d6284f3",
@@ -1232,17 +1223,6 @@
                     "processors": "Normalize(min=1,max=-1,zero=1)",
                     "groups": "G920",
                     "action": "Clutch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "60521334-d410-4bab-8426-9f5190414706",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard Mouse",
-                    "action": "Interior Lights",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

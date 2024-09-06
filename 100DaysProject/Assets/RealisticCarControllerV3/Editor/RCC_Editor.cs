@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -43,8 +43,59 @@ public class RCC_Editor : Editor {
 
     Color defBackgroundColor;
 
+#if RCC_SHORTCUTS
+    [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle #r", false, -85)]
+    static void CreateBehavior() {
+
+        if (!Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>()) {
+
+            bool isPrefab = PrefabUtility.IsAnyPrefabInstanceRoot(Selection.activeGameObject);
+
+            if (isPrefab) {
+
+                bool isModelPrefab = PrefabUtility.IsPartOfModelPrefab(Selection.activeGameObject);
+                bool unpackPrefab = EditorUtility.DisplayDialog("Unpack Prefab", "This gameobject is connected to a " + (isModelPrefab ? "model" : "") + " prefab. Would you like to unpack the prefab completely? If you don't unpack it, you won't be able to move, reorder, or delete any children instance of the prefab.", "Unpack", "Don't Unpack");
+
+                if (unpackPrefab)
+                    PrefabUtility.UnpackPrefabInstance(Selection.activeGameObject, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+
+            }
+
+            bool fixPivot = EditorUtility.DisplayDialog("Fix Pivot Position Of The Vehicle", "Would you like to fix pivot position of the vehicle? If your vehicle has correct pivot position, select no.", "Fix", "No");
+
+            if (fixPivot) {
+
+                GameObject pivot = new GameObject(Selection.activeGameObject.name);
+                pivot.transform.position = RCC_GetBounds.GetBoundsCenter(Selection.activeGameObject.transform);
+                pivot.transform.rotation = Selection.activeGameObject.transform.rotation;
+
+                pivot.AddComponent<RCC_CarControllerV3>();
+
+                Selection.activeGameObject.transform.SetParent(pivot.transform);
+                Selection.activeGameObject = pivot;
+
+            } else {
+
+                GameObject selectedVehicle = Selection.activeGameObject;
+
+                selectedVehicle.AddComponent<RCC_CarControllerV3>();
+
+                Selection.activeGameObject = selectedVehicle;
+
+            }
+
+            EditorUtility.DisplayDialog("RCC Initialized", "Drag and drop all your wheel models in to ''Wheel Models'' from hierarchy.", "Close");
+
+        } else {
+
+            EditorUtility.DisplayDialog("Your Gameobject Already Has Realistic Car Controller", "Your Gameobject Already Has Realistic Car Controller", "Close");
+            Selection.activeGameObject = Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().gameObject;
+
+        }
+
+    }
+#else
     [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle", false, -85)]
-    [MenuItem("GameObject/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle", false, -85)]
     static void CreateBehavior() {
 
         if (!Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>()) {
@@ -94,9 +145,10 @@ public class RCC_Editor : Editor {
         }
 
     }
+#endif
 
-    [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle", true)]
-    [MenuItem("GameObject/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle", true)]
+#if RCC_SHORTCUTS
+    [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle #r", true)]
     static bool CheckCreateBehavior() {
 
         if (!Selection.activeGameObject)
@@ -111,7 +163,23 @@ public class RCC_Editor : Editor {
         return true;
 
     }
+#else
+    [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Add Main Controller To Vehicle", true)]
+    static bool CheckCreateBehavior() {
 
+        if (!Selection.activeGameObject)
+            return false;
+
+        if (Selection.gameObjects.Length > 1)
+            return false;
+
+        if (!Selection.activeTransform.gameObject.activeSelf)
+            return false;
+
+        return true;
+
+    }
+#endif
     private void Awake() {
 
         wheelIcon = Resources.Load("Editor/WheelIcon", typeof(Texture2D)) as Texture2D;
@@ -989,8 +1057,6 @@ public class RCC_Editor : Editor {
         EditorGUILayout.Space();
 
         EditorGUILayout.PropertyField(serializedObject.FindProperty("lowBeamHeadLightsOn"), new GUIContent("Low Beam Head Lights On", "Low beam headlights are on now?"));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("highBeamHeadLightsOn"), new GUIContent("High Beam Head Lights On", "High beam headlights are on now?"));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("interiorLightsOn"), new GUIContent("Interior Lights On", "Interior lights are on now?"));
         EditorGUILayout.Space();
 
         RCC_Light[] lights = carScript.GetComponentsInChildren<RCC_Light>(true);

@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7756f06ac1b082e4bb1697f768a5a41f, type: 3}
   m_Name: RCC_Settings
   m_EditorClassIdentifier: 
-  behaviorSelectedIndex: 0
-  overrideBehavior: 0
+  behaviorSelectedIndex: 2
+  overrideBehavior: 1
   overrideFPS: 0
   overrideFixedTimeStep: 0
   fixedTimeStep: 0.02
   maxAngularVelocity: 8
   maxFPS: 60
-  useShortcuts: 1
+  useShortcuts: 0
   useFixedWheelColliders: 1
   lockAndUnlockCursor: 0
   behaviorTypes:
@@ -431,8 +431,6 @@ MonoBehaviour:
   brakeLights: {fileID: 136378, guid: 40648ef4ebef26d4c9cc0663c2f08e5e, type: 3}
   reverseLights: {fileID: 197258, guid: 188c477ab444228409c4a246c02a86bd, type: 3}
   indicatorLights: {fileID: 166118, guid: 580925c070bc6064c90563e08cb421f0, type: 3}
-  interiorLights: {fileID: 3993337843013240331, guid: cc20828c829fab54e98d1213a6690e3e,
-    type: 3}
   lightTrailers: {fileID: 166118, guid: 707887b20c5d959439a876fea0fb72af, type: 3}
   mirrors: {fileID: 132014, guid: 42ab1ab32651fc74dad3e9cedf0b5270, type: 3}
   RCCMainCamera: {fileID: 11400656, guid: 9f32ea4a11500b344ae05427bdc21e05, type: 3}
@@ -448,7 +446,11 @@ MonoBehaviour:
   dontUseSkidmarks: 0
   audioMixer: {fileID: 24300002, guid: a97addf01f8029040bb6ea53d3c8e62d, type: 2}
   gearShiftingClips:
-  - {fileID: 8300000, guid: f772a702dcfbfe9478afe01aa9429fbc, type: 3}
+  - {fileID: 8300000, guid: fd92e514f75331e4085d0846a166fef8, type: 3}
+  - {fileID: 8300000, guid: 51d3f215e07c15a41aab4038522df8d6, type: 3}
+  - {fileID: 8300000, guid: d16b0aad793dafa4fb78adaae796fbfe, type: 3}
+  - {fileID: 8300000, guid: af63e188bf4d51d458ed8680ad764a3b, type: 3}
+  - {fileID: 8300000, guid: f5993d9cca0a2804f93ce20e421cbf04, type: 3}
   crashClips:
   - {fileID: 8300000, guid: 4c05a8cdfbec615458d075d1e07a7d4c, type: 3}
   - {fileID: 8300000, guid: 17550b365ac51f2418915bf82b519630, type: 3}

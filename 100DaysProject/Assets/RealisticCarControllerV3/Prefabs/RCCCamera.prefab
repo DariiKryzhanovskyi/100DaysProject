@@ -97,7 +97,7 @@ MonoBehaviour:
   useOcclusion: 1
   occlusionLayerMask:
     serializedVersion: 2
-    m_Bits: 49
+    m_Bits: 305
   useAutoChangeCamera: 0
   topCameraAngle: {x: 45, y: 45, z: 0}
   topCameraDistance: 100

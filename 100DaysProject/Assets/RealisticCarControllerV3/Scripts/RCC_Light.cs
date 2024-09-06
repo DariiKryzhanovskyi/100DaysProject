@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -49,7 +49,7 @@ public class RCC_Light : RCC_Core {
     private float finalFlareBrightness;     //  Calculated final flare brightness of the light.
 
     public LightType lightType = LightType.HeadLight;       //  Light type.
-    public enum LightType { HeadLight, BrakeLight, ReverseLight, Indicator, ParkLight, HighBeamHeadLight, External, Interior };
+    public enum LightType { HeadLight, BrakeLight, ReverseLight, Indicator, ParkLight, HighBeamHeadLight, External };
     public float inertia = 1f;      //  Light inertia. 
     public LightRenderMode renderMode = LightRenderMode.Auto;
     public bool overrideRenderMode = false;
@@ -303,10 +303,6 @@ public class RCC_Light : RCC_Core {
                 Lighting(CarController.highBeamHeadLightsOn ? defaultIntensity : 0f, 200f, 45f);
                 break;
 
-            case LightType.Interior:
-                Lighting(CarController.interiorLightsOn ? defaultIntensity : 0f);
-                break;
-
         }
 
     }
@@ -467,9 +463,6 @@ public class RCC_Light : RCC_Core {
             float angle = 1f;
 
             if (lightType != LightType.External)
-                angle = Vector3.Angle(transform.forward, Camera.main.transform.position - transform.position);
-
-            if (lightType != LightType.Interior)
                 angle = Vector3.Angle(transform.forward, Camera.main.transform.position - transform.position);
 
             if (angle != 0)

@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -16,6 +16,6 @@ using UnityEngine;
 /// </summary>
 public class RCC_Version {
 
-    public const string version = "V3.82";
+    public const string version = "V3.70";
 
 }

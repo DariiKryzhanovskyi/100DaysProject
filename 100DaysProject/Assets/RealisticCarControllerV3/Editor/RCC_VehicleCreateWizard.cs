@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -17,7 +17,6 @@ public class RCC_VehicleCreateWizard : EditorWindow {
 
     private GameObject currentSelectedObject;
     private RCC_CarControllerV3 currentSelectedVehicle;
-
     private int wheelSetup = 0;
     private Color guiColor;
 
@@ -25,7 +24,6 @@ public class RCC_VehicleCreateWizard : EditorWindow {
     private const int windowHeight = 850;
 
     [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Open Vehicle Create Wizard", false, -80)]
-    [MenuItem("GameObject/BoneCracker Games/Realistic Car Controller/Open Vehicle Create Wizard", false, -80)]
     public static void OpenWindow() {
 
         GetWindow<RCC_VehicleCreateWizard>(true);
@@ -43,7 +41,7 @@ public class RCC_VehicleCreateWizard : EditorWindow {
 
     private void OnGUI() {
 
-        EditorGUILayout.LabelField("This wizard will guide you to create new vehicles just in a few seconds.", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("This wizard will guide to create new vehicles just in a few seconds.", EditorStyles.boldLabel);
         EditorGUILayout.LabelField("Please follow below steps carefully and build your new vehicle.", EditorStyles.boldLabel);
         EditorGUILayout.LabelField("Be sure your model is eligible for vehicle physics. Info in the documentations.", EditorStyles.boldLabel);
         EditorGUILayout.LabelField("Once you completed all steps, you won't need to use the wizard anymore.", EditorStyles.boldLabel);

@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.01
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 2d4e8f2e5e0cc504b827f381bbc5f4dd, type: 2}
@@ -15868,8 +15868,6 @@ MonoBehaviour:
   totalSlip: 0
   allWheelParticles: []
   tractionHelpedSidewaysStiffness: 1
-  forwardGrip: 1
-  sidewaysGrip: 1
   bumpForce: 0
   oldForce: 0
   RotationValue: 0
@@ -16757,7 +16755,6 @@ MonoBehaviour:
   permanentGas: 0
   lowBeamHeadLightsOn: 0
   highBeamHeadLightsOn: 0
-  interiorLightsOn: 0
   indicatorsOn: 0
   indicatorTimer: 0
   damage:
@@ -17152,8 +17149,6 @@ MonoBehaviour:
   totalSlip: 0
   allWheelParticles: []
   tractionHelpedSidewaysStiffness: 1
-  forwardGrip: 1
-  sidewaysGrip: 1
   bumpForce: 0
   oldForce: 0
   RotationValue: 0
@@ -17681,8 +17676,6 @@ MonoBehaviour:
   totalSlip: 0
   allWheelParticles: []
   tractionHelpedSidewaysStiffness: 1
-  forwardGrip: 1
-  sidewaysGrip: 1
   bumpForce: 0
   oldForce: 0
   RotationValue: 0
@@ -27902,8 +27895,6 @@ MonoBehaviour:
   totalSlip: 0
   allWheelParticles: []
   tractionHelpedSidewaysStiffness: 1
-  forwardGrip: 1
-  sidewaysGrip: 1
   bumpForce: 0
   oldForce: 0
   RotationValue: 0

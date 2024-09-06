@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -20,24 +20,10 @@ public class RCC_AIWaypointsContainer : MonoBehaviour {
 
     public List<RCC_Waypoint> waypoints = new List<RCC_Waypoint>();     //  All waypoints.
 
-    private void Awake() {
+    private void Start() {
 
-        //  Getting waypoints and adding them to the list.
-        GetAllWaypoints();
-
-    }
-
-    /// <summary>
-    /// Getting waypoints and adding them to the list.
-    /// </summary>
-    public void GetAllWaypoints() {
-
-        if (waypoints == null)
-            waypoints = new List<RCC_Waypoint>();
-
-        waypoints.Clear();
-
-        waypoints = GetComponentsInChildren<RCC_Waypoint>(true).ToList();
+        RCC_Waypoint[] childWaypoints = GetComponentsInChildren<RCC_Waypoint>();
+        waypoints = childWaypoints.ToList();
 
     }
 

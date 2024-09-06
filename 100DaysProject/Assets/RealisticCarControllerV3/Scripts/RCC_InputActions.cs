@@ -82,15 +82,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Interior Lights"",
-                    ""type"": ""Button"",
-                    ""id"": ""824b9e50-4e4f-45c8-ab0b-d979354e8d3a"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""High Beam Lights"",
                     ""type"": ""Button"",
                     ""id"": ""ce045397-f3db-4d56-a9ab-f15b8d6284f3"",
@@ -1256,17 +1247,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Clutch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""60521334-d410-4bab-8426-9f5190414706"",
-                    ""path"": ""<Keyboard>/m"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard Mouse"",
-                    ""action"": ""Interior Lights"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -1596,7 +1576,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
         m_Vehicle_Handbrake = m_Vehicle.FindAction("Handbrake", throwIfNotFound: true);
         m_Vehicle_StartStopEngine = m_Vehicle.FindAction("Start/Stop Engine", throwIfNotFound: true);
         m_Vehicle_LowBeamLights = m_Vehicle.FindAction("Low Beam Lights", throwIfNotFound: true);
-        m_Vehicle_InteriorLights = m_Vehicle.FindAction("Interior Lights", throwIfNotFound: true);
         m_Vehicle_HighBeamLights = m_Vehicle.FindAction("High Beam Lights", throwIfNotFound: true);
         m_Vehicle_IndicatorRight = m_Vehicle.FindAction("Indicator Right", throwIfNotFound: true);
         m_Vehicle_IndicatorLeft = m_Vehicle.FindAction("Indicator Left", throwIfNotFound: true);
@@ -1692,7 +1671,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Vehicle_Handbrake;
     private readonly InputAction m_Vehicle_StartStopEngine;
     private readonly InputAction m_Vehicle_LowBeamLights;
-    private readonly InputAction m_Vehicle_InteriorLights;
     private readonly InputAction m_Vehicle_HighBeamLights;
     private readonly InputAction m_Vehicle_IndicatorRight;
     private readonly InputAction m_Vehicle_IndicatorLeft;
@@ -1720,7 +1698,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
         public InputAction @Handbrake => m_Wrapper.m_Vehicle_Handbrake;
         public InputAction @StartStopEngine => m_Wrapper.m_Vehicle_StartStopEngine;
         public InputAction @LowBeamLights => m_Wrapper.m_Vehicle_LowBeamLights;
-        public InputAction @InteriorLights => m_Wrapper.m_Vehicle_InteriorLights;
         public InputAction @HighBeamLights => m_Wrapper.m_Vehicle_HighBeamLights;
         public InputAction @IndicatorRight => m_Wrapper.m_Vehicle_IndicatorRight;
         public InputAction @IndicatorLeft => m_Wrapper.m_Vehicle_IndicatorLeft;
@@ -1765,9 +1742,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
             @LowBeamLights.started += instance.OnLowBeamLights;
             @LowBeamLights.performed += instance.OnLowBeamLights;
             @LowBeamLights.canceled += instance.OnLowBeamLights;
-            @InteriorLights.started += instance.OnInteriorLights;
-            @InteriorLights.performed += instance.OnInteriorLights;
-            @InteriorLights.canceled += instance.OnInteriorLights;
             @HighBeamLights.started += instance.OnHighBeamLights;
             @HighBeamLights.performed += instance.OnHighBeamLights;
             @HighBeamLights.canceled += instance.OnHighBeamLights;
@@ -1841,9 +1815,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
             @LowBeamLights.started -= instance.OnLowBeamLights;
             @LowBeamLights.performed -= instance.OnLowBeamLights;
             @LowBeamLights.canceled -= instance.OnLowBeamLights;
-            @InteriorLights.started -= instance.OnInteriorLights;
-            @InteriorLights.performed -= instance.OnInteriorLights;
-            @InteriorLights.canceled -= instance.OnInteriorLights;
             @HighBeamLights.started -= instance.OnHighBeamLights;
             @HighBeamLights.performed -= instance.OnHighBeamLights;
             @HighBeamLights.canceled -= instance.OnHighBeamLights;
@@ -2088,7 +2059,6 @@ public partial class @RCC_InputActions: IInputActionCollection2, IDisposable
         void OnHandbrake(InputAction.CallbackContext context);
         void OnStartStopEngine(InputAction.CallbackContext context);
         void OnLowBeamLights(InputAction.CallbackContext context);
-        void OnInteriorLights(InputAction.CallbackContext context);
         void OnHighBeamLights(InputAction.CallbackContext context);
         void OnIndicatorRight(InputAction.CallbackContext context);
         void OnIndicatorLeft(InputAction.CallbackContext context);

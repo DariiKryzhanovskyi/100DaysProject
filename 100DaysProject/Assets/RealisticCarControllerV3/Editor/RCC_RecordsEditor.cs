@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -100,5 +100,66 @@ public class RCC_RecordsEditor : Editor {
         prop.records.Clear();
 
     }
+
+    //	void CheckLights(){
+    //
+    //		if (!prop.gameObject.activeInHierarchy)
+    //			return;
+    //
+    //		Vector3 relativePos = prop.GetComponentInParent<RCC_CarControllerV3>().transform.InverseTransformPoint (prop.transform.position);
+    //
+    //		if (relativePos.z > 0f) {
+    //			
+    //			if (Mathf.Abs (prop.transform.localRotation.y) > .5f) {
+    //
+    //				GUI.color = Color.red;
+    //				EditorGUILayout.HelpBox ("Lights is facing to wrong direction!", MessageType.Error);
+    //				GUI.color = originalGUIColor;
+    //
+    //				GUI.color = Color.green;
+    //
+    //				if (GUILayout.Button ("Fix Rotation"))
+    //					prop.transform.localRotation = Quaternion.identity;
+    //
+    //				GUI.color = originalGUIColor;
+    //
+    //			}
+    //
+    //		} else {
+    //
+    //			if (Mathf.Abs (prop.transform.localRotation.y) < .5f) {
+    //
+    //				GUI.color = Color.red;
+    //				EditorGUILayout.HelpBox ("Lights is facing to wrong direction!", MessageType.Error);
+    //				GUI.color = originalGUIColor;
+    //
+    //				GUI.color = Color.green;
+    //
+    //				if (GUILayout.Button ("Fix Rotation"))
+    //					prop.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);
+    //
+    //				GUI.color = originalGUIColor;
+    //
+    //			}
+    //
+    //		}
+    //
+    //		if (!EditorApplication.isPlaying) {
+    //
+    //			GameObject[] lights = Selection.gameObjects;
+    //
+    //			for (int i = 0; i < lights.Length; i++) {
+    //
+    //				if (lights[i].GetComponent<Light> ().flare != null)
+    //					lights[i].GetComponent<Light> ().flare = null;
+    //
+    //				if (lights[i].GetComponent<LensFlare> ())
+    //					lights[i].GetComponent<LensFlare> ().brightness = 0f;
+    //
+    //			}
+    //			
+    //		}
+    //
+    //	}
 
 }

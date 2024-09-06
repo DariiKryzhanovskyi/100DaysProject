@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -20,6 +20,7 @@ public class RCC_AssetPaths {
     public const string PUN2AssetsPath = "Assets/RealisticCarControllerV3/Addon Packages/For Photon PUN 2/Photon PUN 2 Scripts and Photon Vehicles.unitypackage";
     public const string ProFlareAssetsPath = "Assets/RealisticCarControllerV3/Addon Packages/For ProFlares/Pro Flares Integration.unitypackage";
     public const string LogiAssetsPath = "Assets/RealisticCarControllerV3/Addon Packages/For Logitech Steering Wheel/Logitech Integration.unitypackage";
+    public const string projectSettingsPath = "Assets/RealisticCarControllerV3/Addon Packages/Project Settings/RCC_ProjectSettings.unitypackage";
     public const string editorPreferences = "Assets/RealisticCarControllerV3/Editor/RCC_Preferences.asset";
     public const string inputsPath = "RCC_InputActions";
 

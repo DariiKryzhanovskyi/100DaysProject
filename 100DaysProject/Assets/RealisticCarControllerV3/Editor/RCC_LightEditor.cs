@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -150,9 +150,6 @@ public class RCC_LightEditor : Editor {
             return;
 
         if (prop.GetComponentInParent<RCC_CarControllerV3>() == null)
-            return;
-
-        if (prop.lightType == RCC_Light.LightType.External || prop.lightType == RCC_Light.LightType.Interior || prop.lightType == RCC_Light.LightType.ParkLight)
             return;
 
         Vector3 relativePos = prop.GetComponentInParent<RCC_CarControllerV3>().transform.InverseTransformPoint(prop.transform.position);

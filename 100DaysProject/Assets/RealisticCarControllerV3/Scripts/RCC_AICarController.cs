@@ -1,7 +1,7 @@
 //----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -20,9 +20,7 @@ using System.Collections.Generic;
 [AddComponentMenu("BoneCracker Games/Realistic Car Controller/AI/RCC AI Car Controller")]
 public class RCC_AICarController : MonoBehaviour {
 
-    /// <summary>
-    /// Car controller.
-    /// </summary>
+    // Car controller.
     public RCC_CarControllerV3 CarController {
         get {
             if (_carController == null)
@@ -32,195 +30,68 @@ public class RCC_AICarController : MonoBehaviour {
     }
     private RCC_CarControllerV3 _carController;
 
-    /// <summary>
-    /// Waypoints Container.
-    /// </summary>
-    public RCC_AIWaypointsContainer waypointsContainer;
+    public RCC_AIWaypointsContainer waypointsContainer;                 // Waypoints Container.
+    public int currentWaypointIndex = 0;                                            // Current index in Waypoint Container.
+    public string targetTag = "Player";                                 // Search and chase Gameobjects with tags.
 
-    /// <summary>
-    ///  Current index in Waypoint Container.
-    /// </summary>
-    public int currentWaypointIndex = 0;
-
-    /// <summary>
-    /// Search and chase Gameobjects with tags.
-    /// </summary>
-    public string targetTag = "Player";
-
+    // AI Type
     public NavigationMode navigationMode = NavigationMode.FollowWaypoints;
-
-    /// <summary>
-    /// AI Type.
-    /// </summary>
     public enum NavigationMode { FollowWaypoints, ChaseTarget, FollowTarget }
 
-    /// <summary>
-    /// Raycast distances used for detecting obstacles at front of the AI vehicle.
-    /// </summary>
+    // Raycast distances used for detecting obstacles at front of the AI vehicle.
     [Range(5f, 30f)] public float raycastLength = 3f;
-
-    /// <summary>
-    /// Raycast distances used for detecting obstacles at front of the AI vehicle.
-    /// </summary>
     [Range(10f, 90f)] public float raycastAngle = 30f;
-
-    /// <summary>
-    /// Raycast distances used for detecting obstacles at front of the AI vehicle.
-    /// </summary>
     public LayerMask obstacleLayers = -1;
-
-    /// <summary>
-    /// Current detected obstacle.
-    /// </summary>
     public GameObject obstacle;
 
-    /// <summary>
-    /// Using forward and sideways raycasts to avoid obstacles.
-    /// </summary>
-    public bool useRaycasts = true;	
-
-    /// <summary>
-    /// Raycast origin, offset.
-    /// </summary>
-    public Vector3 rayOrigin = new Vector3(0f, .1f, 2f);
-
-    /// <summary>
-    /// Total ray input affected by raycast distances.
-    /// </summary>
-    private float rayInput = 0f;
-
-    /// <summary>
-    /// Raycasts hits an obstacle now?
-    /// </summary>
-    private bool raycasting = false;
-
-    /// <summary>
-    /// This timer was used for deciding go back or not, after crashing.
-    /// </summary>
-    private float resetTime = 0f;
-
-    /// <summary>
-    /// Reversing now?
-    /// </summary>
-    private bool reversingNow = false;
+    public bool useRaycasts = true;     //	Using forward and sideways raycasts to avoid obstacles.
+    private float rayInput = 0f;                // Total ray input affected by raycast distances.
+    private bool raycasting = false;        // Raycasts hits an obstacle now?
+    private float resetTime = 0f;           // This timer was used for deciding go back or not, after crashing.
+    private bool reversingNow = false;      //  Reversing now?
 
     // Steer, Motor, And Brake inputs. Will feed RCC_CarController with these inputs.
-
-    /// <summary>
-    /// Steer input.
-    /// </summary>
     public float steerInput = 0f;
-
-    /// <summary>
-    /// Throttle input.
-    /// </summary>
     public float throttleInput = 0f;
-
-    /// <summary>
-    /// Brake input.
-    /// </summary>
     public float brakeInput = 0f;
-
-    /// <summary>
-    /// Handbrake input.
-    /// </summary>
     public float handbrakeInput = 0f;
 
-    /// <summary>
-    /// Limit speed.
-    /// </summary>
+    // Limit speed.
     public bool limitSpeed = false;
-
-    /// <summary>
-    /// Maximum speed.
-    /// </summary>
     public float maximumSpeed = 100f;
 
-    /// <summary>
-    /// Smoothed steering.
-    /// </summary>
+    // Smoothed steering.
     public bool smoothedSteer = true;
 
     // Counts laps and how many waypoints were passed.
-
-    /// <summary>
-    /// Total lap count.
-    /// </summary>
     public int lap = 0;
-
-    /// <summary>
-    /// Stop after this lap.
-    /// </summary>
     public bool stopAfterLap = false;
-
-    /// <summary>
-    /// Stop after this lap.
-    /// </summary>
     public int stopLap = 10;
-
-    /// <summary>
-    /// Total waypoints passed.
-    /// </summary>
     public int totalWaypointPassed = 0;
-
-    /// <summary>
-    /// Ignoring waypoint position due to an obstacle.
-    /// </summary>
     public bool ignoreWaypointNow = false;
 
-    /// <summary>
-    /// Detector radius.
-    /// </summary>
+    // Detector radius.
     public int detectorRadius = 200;
-
-    /// <summary>
-    /// Start to follow distance.
-    /// </summary>
     public int startFollowDistance = 300;
-
-    /// <summary>
-    /// Stop to follow distance.
-    /// </summary>
     public int stopFollowDistance = 30;
-
-    /// <summary>
-    /// Updating the targets.
-    /// </summary>
     private bool updateTargets = false;
     private float lastUpdatedTargets = 0f;
 
-    /// <summary>
-    /// Unity's Navigator.
-    /// </summary>
+    // Unity's Navigator.
     private NavMeshAgent navigator;
 
-    /// <summary>
-    /// Detector with Sphere Collider. Used for finding target Gameobjects in chasing mode.
-    /// </summary>
+    // Detector with Sphere Collider. Used for finding target Gameobjects in chasing mode.
     public List<Transform> targetsInZone = new List<Transform>();
     public List<RCC_AIBrakeZone> brakeZones = new List<RCC_AIBrakeZone>();
 
-    /// <summary>
-    /// Target Gameobject for chasing.
-    /// </summary>
-    public Transform targetChase;
+    public Transform targetChase;       // Target Gameobject for chasing.
+    public RCC_AIBrakeZone targetBrake;     //  Target brakezone.
 
-    /// <summary>
-    /// Target brakezone.
-    /// </summary>
-    public RCC_AIBrakeZone targetBrake;
-
-    /// <summary>
-    /// Firing an event when each RCC AI vehicle spawned / enabled.
-    /// </summary>
-    /// <param name="RCCAI"></param>
+    // Firing an event when each RCC AI vehicle spawned / enabled.
     public delegate void onRCCAISpawned(RCC_AICarController RCCAI);
     public static event onRCCAISpawned OnRCCAISpawned;
 
-    /// <summary>
-    /// Firing an event when each RCC AI vehicle disabled / destroyed.
-    /// </summary>
-    /// <param name="RCCAI"></param>
+    // Firing an event when each RCC AI vehicle disabled / destroyed.
     public delegate void onRCCAIDestroyed(RCC_AICarController RCCAI);
     public static event onRCCAIDestroyed OnRCCAIDestroyed;
 
@@ -556,7 +427,8 @@ public class RCC_AICarController : MonoBehaviour {
         anglesOfRaycasts[4] = -Mathf.FloorToInt(raycastAngle / 3f);
 
         // Ray pivot position.
-        Vector3 pivotPos = transform.position + transform.TransformVector(rayOrigin);
+        Vector3 pivotPos = transform.position;
+        pivotPos += transform.forward * CarController.FrontLeftWheelCollider.transform.localPosition.z;
 
         //  Ray hit.
         RaycastHit hit;

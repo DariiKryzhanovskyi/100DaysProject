@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -46,9 +46,6 @@ public class RCC_InputManager : RCC_Singleton<RCC_InputManager> {
 
     public delegate void onIndicatorHazard();
     public static event onIndicatorHazard OnIndicatorHazard;
-
-    public delegate void onInteriorlights();
-    public static event onInteriorlights OnInteriorlights;
 
     public delegate void onGearShiftUp();
     public static event onGearShiftUp OnGearShiftUp;
@@ -112,7 +109,6 @@ public class RCC_InputManager : RCC_Singleton<RCC_InputManager> {
             inputActions.Vehicle.IndicatorLeft.performed += IndicatorLeft_performed;
             inputActions.Vehicle.IndicatorRight.performed += IndicatorRight_performed;
             inputActions.Vehicle.IndicatorHazard.performed += IndicatorHazard_performed;
-            inputActions.Vehicle.InteriorLights.performed += InteriorLights_performed;
             inputActions.Vehicle.GearShiftUp.performed += GearShiftUp_performed;
             inputActions.Vehicle.GearShiftDown.performed += GearShiftDown_performed;
             inputActions.Vehicle.NGear.performed += NGear_performed;
@@ -351,13 +347,6 @@ public class RCC_InputManager : RCC_Singleton<RCC_InputManager> {
 
         if (OnLowBeamHeadlights != null)
             OnLowBeamHeadlights();
-
-    }
-
-    private static void InteriorLights_performed(InputAction.CallbackContext obj) {
-
-        if (OnInteriorlights != null)
-            OnInteriorlights();
 
     }
 

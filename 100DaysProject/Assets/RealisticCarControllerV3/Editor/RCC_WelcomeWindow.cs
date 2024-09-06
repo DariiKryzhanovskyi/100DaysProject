@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -14,6 +14,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 
+[InitializeOnLoad]
 public class RCC_WelcomeWindow : EditorWindow {
 
     public class ToolBar {
@@ -65,7 +66,6 @@ public class RCC_WelcomeWindow : EditorWindow {
     private const int windowHeight = 750;
 
     [MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Welcome Window", false, 10000)]
-    [MenuItem("GameObject/BoneCracker Games/Realistic Car Controller/Welcome Window", false, 10000)]
     public static void OpenWindow() {
 
         GetWindow<RCC_WelcomeWindow>(true);
@@ -130,6 +130,12 @@ public class RCC_WelcomeWindow : EditorWindow {
         EditorGUILayout.Separator();
 
         EditorGUILayout.BeginVertical("box");
+
+        EditorGUILayout.HelpBox("Realistic Car Controller needs configured Tags & Layers in your Project Settings. Importing them will overwrite your Project Settings!", MessageType.Warning, true);
+        EditorGUILayout.Separator();
+
+        if (GUILayout.Button("Import Project Settings (Tags & Layers)"))
+            AssetDatabase.ImportPackage(RCC_AssetPaths.projectSettingsPath, true);
 
         EditorGUILayout.Separator();
 
@@ -517,7 +523,7 @@ public class RCC_WelcomeWindow : EditorWindow {
 
         EditorGUILayout.LabelField("BoneCracker Games", EditorStyles.centeredGreyMiniLabel);
         EditorGUILayout.LabelField("Realistic Car Controller " + RCC_Version.version, EditorStyles.centeredGreyMiniLabel);
-        EditorGUILayout.LabelField("Ekrem Bugra Ozdoganlar", EditorStyles.centeredGreyMiniLabel);
+        EditorGUILayout.LabelField("Buğra Özdoğanlar", EditorStyles.centeredGreyMiniLabel);
 
         EditorGUILayout.EndHorizontal();
 

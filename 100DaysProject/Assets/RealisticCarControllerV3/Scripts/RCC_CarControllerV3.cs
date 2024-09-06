@@ -1,7 +1,7 @@
 //----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -381,7 +381,6 @@ public class RCC_CarControllerV3 : RCC_Core {
     // Lights.
     public bool lowBeamHeadLightsOn = false;    // Low beam head lights.
     public bool highBeamHeadLightsOn = false;   // High beam head lights.
-    public bool interiorLightsOn = false;       //  Interior lights.
     #endregion
 
     #region Indicator Lights
@@ -608,7 +607,6 @@ public class RCC_CarControllerV3 : RCC_Core {
         RCC_InputManager.OnIndicatorLeft += RCC_InputManager_OnIndicatorLeft;
         RCC_InputManager.OnIndicatorRight += RCC_InputManager_OnIndicatorRight;
         RCC_InputManager.OnIndicatorHazard += RCC_InputManager_OnIndicatorHazard;
-        RCC_InputManager.OnInteriorlights += RCC_InputManager_OnInteriorLights;
         RCC_InputManager.OnGearShiftUp += RCC_InputManager_OnGearShiftUp;
         RCC_InputManager.OnGearShiftDown += RCC_InputManager_OnGearShiftDown;
         RCC_InputManager.OnNGear += RCC_InputManager_OnNGear;
@@ -2454,15 +2452,6 @@ public class RCC_CarControllerV3 : RCC_Core {
             return;
 
         lowBeamHeadLightsOn = !lowBeamHeadLightsOn;
-
-    }
-
-    private void RCC_InputManager_OnInteriorLights() {
-
-        if (!canControl || externalController)
-            return;
-
-        interiorLightsOn = !interiorLightsOn;
 
     }
 

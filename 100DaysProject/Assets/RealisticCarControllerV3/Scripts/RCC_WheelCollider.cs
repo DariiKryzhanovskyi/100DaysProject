@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -153,9 +153,6 @@ public class RCC_WheelCollider : RCC_Core {
     private readonly float maxForwardStiffness = 1f;
     private readonly float minSidewaysStiffness = .5f;
     private readonly float maxSidewaysStiffness = 1f;
-
-    [Range(0f, 1f)] public float forwardGrip = 1f;
-    [Range(0f, 1f)] public float sidewaysGrip = 1f;
 
     // Getting bump force.
     [HideInInspector] public float bumpForce, oldForce, RotationValue = 0f;
@@ -547,8 +544,8 @@ public class RCC_WheelCollider : RCC_Core {
             hbInput = 1f;
 
         // Setting wheel stiffness to ground physic material stiffness.
-        forwardFrictionCurve.stiffness = RCC_GroundMaterials.Instance.frictions[groundIndex].forwardStiffness * forwardGrip;
-        sidewaysFrictionCurve.stiffness = (RCC_GroundMaterials.Instance.frictions[groundIndex].sidewaysStiffness * hbInput * tractionHelpedSidewaysStiffness) * sidewaysGrip;
+        forwardFrictionCurve.stiffness = RCC_GroundMaterials.Instance.frictions[groundIndex].forwardStiffness;
+        sidewaysFrictionCurve.stiffness = (RCC_GroundMaterials.Instance.frictions[groundIndex].sidewaysStiffness * hbInput * tractionHelpedSidewaysStiffness);
 
         //  If deflated, apply deflated stiffness.
         if (deflated) {

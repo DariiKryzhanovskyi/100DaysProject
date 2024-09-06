@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -91,8 +91,6 @@ public class RCC_SceneManager : RCC_Singleton<RCC_SceneManager> {
         RCC_CarControllerV3.OnRCCPlayerDestroyed += RCC_CarControllerV3_OnRCCPlayerDestroyed;
         RCC_AICarController.OnRCCAIDestroyed += RCC_AICarController_OnRCCAIDestroyed;
         RCC_InputManager.OnSlowMotion += RCC_InputManager_OnSlowMotion;
-        RCC_InputManager.OnRecord += RCC_InputManager_OnRecord;
-        RCC_InputManager.OnReplay += RCC_InputManager_OnReplay;
 
 #if BCG_ENTEREXIT
         BCG_EnterExitPlayer.OnBCGPlayerSpawned += BCG_EnterExitPlayer_OnBCGPlayerSpawned;
@@ -695,24 +693,6 @@ public class RCC_SceneManager : RCC_Singleton<RCC_SceneManager> {
 
     }
 
-    /// <summary>
-    /// Replay.
-    /// </summary>
-    private void RCC_InputManager_OnReplay() {
-
-        Play();
-
-    }
-
-    /// <summary>
-    /// Record
-    /// </summary>
-    private void RCC_InputManager_OnRecord() {
-
-        Record();
-
-    }
-
     private void OnDisable() {
 
         RCC_Camera.OnBCGCameraSpawned -= RCC_Camera_OnBCGCameraSpawned;
@@ -721,8 +701,6 @@ public class RCC_SceneManager : RCC_Singleton<RCC_SceneManager> {
         RCC_CarControllerV3.OnRCCPlayerDestroyed -= RCC_CarControllerV3_OnRCCPlayerDestroyed;
         RCC_AICarController.OnRCCAIDestroyed -= RCC_AICarController_OnRCCAIDestroyed;
         RCC_InputManager.OnSlowMotion -= RCC_InputManager_OnSlowMotion;
-        RCC_InputManager.OnRecord -= RCC_InputManager_OnRecord;
-        RCC_InputManager.OnReplay -= RCC_InputManager_OnReplay;
 
 #if BCG_ENTEREXIT
         BCG_EnterExitPlayer.OnBCGPlayerSpawned -= BCG_EnterExitPlayer_OnBCGPlayerSpawned;

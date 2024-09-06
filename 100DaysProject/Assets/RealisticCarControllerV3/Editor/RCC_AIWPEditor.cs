@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -61,14 +61,6 @@ public class RCC_AIWPEditor : Editor {
 
                 Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
                 RaycastHit hit = new RaycastHit();
-
-                int controlId = GUIUtility.GetControlID(FocusType.Passive);
-
-                // Tell the UI your event is the main one to use, it override the selection in  the scene view
-                GUIUtility.hotControl = controlId;
-                // Don't forget to use the event
-                Event.current.Use();
-
                 if (Physics.Raycast(ray, out hit, 5000.0f)) {
 
                     Vector3 newTilePosition = hit.point;
@@ -78,13 +70,14 @@ public class RCC_AIWPEditor : Editor {
                     wp.transform.position = newTilePosition;
                     wp.transform.SetParent(wpScript.transform);
 
-                    wpScript.GetAllWaypoints();
-
-                    EditorUtility.SetDirty(wpScript);
+                    GetWaypoints();
 
                 }
 
             }
+
+            if (wpScript)
+                Selection.activeGameObject = wpScript.gameObject;
 
         }
 

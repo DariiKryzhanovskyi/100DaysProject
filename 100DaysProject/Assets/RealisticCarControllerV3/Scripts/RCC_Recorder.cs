@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -138,6 +138,32 @@ public class RCC_Recorder : MonoBehaviour {
         Inputs = new List<PlayerInput>();
         Transforms = new List<PlayerTransform>();
         Rigidbodies = new List<PlayerRigidBody>();
+
+    }
+
+    private void OnEnable() {
+
+        // Listening input events.
+        RCC_InputManager.OnRecord += RCC_InputManager_OnRecord;
+        RCC_InputManager.OnReplay += RCC_InputManager_OnReplay;
+
+    }
+
+    /// <summary>
+    /// Replay.
+    /// </summary>
+    private void RCC_InputManager_OnReplay() {
+
+        RCC_SceneManager.Instance.Play();
+
+    }
+
+    /// <summary>
+    /// Record
+    /// </summary>
+    private void RCC_InputManager_OnRecord() {
+
+        RCC_SceneManager.Instance.Record();
 
     }
 
@@ -344,6 +370,14 @@ public class RCC_Recorder : MonoBehaviour {
                 break;
 
         }
+
+    }
+
+    private void OnDisable() {
+
+        // Listening input events.
+        RCC_InputManager.OnRecord -= RCC_InputManager_OnRecord;
+        RCC_InputManager.OnReplay -= RCC_InputManager_OnReplay;
 
     }
 

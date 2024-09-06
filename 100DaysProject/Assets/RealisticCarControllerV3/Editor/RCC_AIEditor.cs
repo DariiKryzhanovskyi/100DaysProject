@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -16,6 +16,8 @@ using System.Collections.Generic;
 public class RCC_AIEditor : Editor {
 
     RCC_AICarController aiController;
+
+
 
     public override void OnInspectorGUI() {
 
@@ -63,7 +65,6 @@ public class RCC_AIEditor : Editor {
 
         if (aiController.useRaycasts) {
 
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("rayOrigin"), new GUIContent("Raycast Origin", "Raycast origin, offset."), false);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("obstacleLayers"), new GUIContent("Obstacle Layers", "Obstacle Layers For Avoid Dynamic Objects."), false);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("raycastLength"), new GUIContent("Ray Distance", "Rays For Avoid Dynamic Objects."), false);
             EditorGUILayout.PropertyField(serializedObject.FindProperty("raycastAngle"), new GUIContent("Ray Angle", "Ray Angles."), false);

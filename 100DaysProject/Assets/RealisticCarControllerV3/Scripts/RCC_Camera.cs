@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -236,8 +236,6 @@ public class RCC_Camera : MonoBehaviour {
     public delegate void onBCGCameraSpawned(GameObject BCGCamera);
     public static event onBCGCameraSpawned OnBCGCameraSpawned;
 
-    float refV = 0f;
-
     private void Awake() {
 
         // Getting Camera.
@@ -458,7 +456,7 @@ public class RCC_Camera : MonoBehaviour {
 
         acceleration = (cameraTarget.playerVehicle.transform.InverseTransformDirection(cameraTarget.playerVehicle.Rigid.velocity) - lastVelocity) / Time.fixedDeltaTime;
         lastVelocity = cameraTarget.playerVehicle.transform.InverseTransformDirection(cameraTarget.playerVehicle.Rigid.velocity);
-
+        
         acceleration.x = 0f;
         acceleration.y = 0f;
         acceleration = Vector3.ClampMagnitude(acceleration, 10f);
@@ -712,8 +710,6 @@ public class RCC_Camera : MonoBehaviour {
         //  If TPS dynamic is enabled, reduce distance and height related to the vehicle speed.
         if (TPSDynamic)
             position -= cameraTarget.playerVehicle.transform.rotation * acceleration_Smoothed / 20f;
-
-
 
         //  Setting position and rotation.
         transform.rotation = rotation;
@@ -1166,7 +1162,7 @@ public class RCC_Camera : MonoBehaviour {
     private void Reset() {
 
         //  If pivot of the camera is not found, create it.
-        if (transform.Find("Pivot"))
+        if(transform.Find("Pivot"))
             pivot = transform.Find("Pivot").gameObject;
 
         if (!pivot) {

@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -195,7 +195,6 @@ public class RCC_Settings : ScriptableObject {
     public GameObject brakeLights;
     public GameObject reverseLights;
     public GameObject indicatorLights;
-    public GameObject interiorLights;
     public GameObject lightTrailers;
     public GameObject mirrors;
 

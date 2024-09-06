@@ -1,7 +1,7 @@
 ﻿//----------------------------------------------
 //            Realistic Car Controller
 //
-// Copyright © 2014 - 2024 BoneCracker Games
+// Copyright © 2014 - 2023 BoneCracker Games
 // https://www.bonecrackergames.com
 // Buğra Özdoğanlar
 //
@@ -17,10 +17,7 @@ using System.Collections.Generic;
 [AddComponentMenu("BoneCracker Games/Realistic Car Controller/AI/RCC AI Brake Zones Container")]
 public class RCC_AIBrakeZonesContainer : MonoBehaviour {
 
-    /// <summary>
-    /// Brake Zones list.
-    /// </summary>
-    public List<Transform> brakeZones = new List<Transform>();
+    public List<Transform> brakeZones = new List<Transform>();      // Brake Zones list.
 
     private void Awake() {
 
