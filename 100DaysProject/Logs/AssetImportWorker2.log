@@ -984,3 +984,274 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file data-0000021D33294F60 doesn't match image C:\GitHub\100DaysProject\100DaysProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  6.667 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 77.803 seconds
+Domain Reload Profiling: 84456ms
+	BeginReloadAssembly (508ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (417ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (220ms)
+	LoadAllAssembliesAndSetupDomain (5471ms)
+		LoadAssemblies (5748ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (3ms)
+			ScanForSourceGeneratedMonoScriptInfo (55ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (77804ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (935ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (131ms)
+			ProcessInitializeOnLoadAttributes (625ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (33ms)
+Script is not up to date after domain reload: guid(0f97a3395cdd94646898e1f6d7e64c14) path("Assets/BoneCracker Games Shared Assets/Scripts/BCG_InputActions.cs") state(2)
+Refreshing native plugins compatible for Editor in 9.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5315 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.5 KB). Loaded Objects now: 6116.
+Memory consumption went from 204.5 MB to 204.1 MB.
+Total: 8.652400 ms (FindLiveObjects: 1.351400 ms CreateObjectMapping: 0.862100 ms MarkObjects: 5.762400 ms  DeleteObjects: 0.672500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/BCG_Singleton.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/BCG_MobileCharacterController.cs: 925ea5fc512785cf8745f2d2dbc9032c -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitManager.cs: 9ca2573bbef65b588b952b1374969281 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BCG_Version.cs: ea32a13811a27ace8c77439a644be9bb -> 
+  custom:scripting/monoscript/fileName/BCG_Inputs.cs: 9268a89e568214176bdb6724326e885f -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitPlayerEditor.cs: 42adfca82732f0c8b2737333d16072d7 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitPlayer.cs: ffe7b9dcc138f99885c09db0419897d0 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitVehicle.cs: 5af67e7b3544ec8b90a6b2655e9234c0 -> 
+  custom:scripting/monoscript/fileName/BCG_InputManager.cs: a987c48607c6c4578b0e244eab7672cf -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitVehicleEditor.cs: 63f3815cd78715099635999fb8c769a4 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitSettingsEditor.cs: 8177c44bbe44d6a8ba9ed1bf253bc2fd -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/BCG_FPSController.cs: 3649571dbb0ac6fb41bd92f7c2f6cb03 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitInitLoad.cs: d7739be1ca0f7eb9cb13c4d610eb10b2 -> 
+  custom:scripting/monoscript/fileName/BCG_TPSController.cs: ab983d311bd4bd68f6eb7b1896529d4e -> 
+  custom:scripting/monoscript/fileName/BCG_InputActions.cs: 849ed7f5b11c9db237ef61b01c5a5104 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitSettings.cs: cbdb6a3478028f3d9e6e33947997f2fc -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitManagerEditor.cs: f81b65f383aebbe8b1a3bd3f77fe083d -> 
+  custom:scripting/monoscript/fileName/BCG_UIInteractionButton.cs: 0fe86db546e2b172a22e58a34ba9be19 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitCharacterUICanvas.cs: ae318572531cdf9801f1b1a346eee727 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/BCG_SetScriptingSymbol.cs: 92356e71a8c8da65efc83f0b7b259df6 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 7a6bb044387840bce89b838598dcbd77 -> bbca1167aa81ee8dcd402130b43982ac
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 54e1b3073104de3ff3327876c924d3dd -> 253772d6d3a8219522539d7c840d2f16
+  custom:scripting/monoscript/fileName/BCG_Joystick.cs: 6808541e5b7a92528406ac2aa8546f4b -> 
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.921 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.526 seconds
+Domain Reload Profiling: 2445ms
+	BeginReloadAssembly (274ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (69ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (536ms)
+		LoadAssemblies (450ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (227ms)
+			TypeCache.Refresh (179ms)
+				TypeCache.ScanAssembly (166ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1526ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (678ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (460ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 11.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5316 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (316.6 KB). Loaded Objects now: 6121.
+Memory consumption went from 204.5 MB to 204.2 MB.
+Total: 9.295000 ms (FindLiveObjects: 0.942700 ms CreateObjectMapping: 0.981000 ms MarkObjects: 7.179600 ms  DeleteObjects: 0.189700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/BCG_Singleton.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/BCG_MobileCharacterController.cs: 925ea5fc512785cf8745f2d2dbc9032c -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitManager.cs: 9ca2573bbef65b588b952b1374969281 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/BCG_Version.cs: ea32a13811a27ace8c77439a644be9bb -> 
+  custom:scripting/monoscript/fileName/BCG_Inputs.cs: 9268a89e568214176bdb6724326e885f -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitPlayerEditor.cs: 42adfca82732f0c8b2737333d16072d7 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitPlayer.cs: ffe7b9dcc138f99885c09db0419897d0 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitVehicle.cs: 5af67e7b3544ec8b90a6b2655e9234c0 -> 
+  custom:scripting/monoscript/fileName/BCG_InputManager.cs: a987c48607c6c4578b0e244eab7672cf -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitVehicleEditor.cs: 63f3815cd78715099635999fb8c769a4 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitSettingsEditor.cs: 8177c44bbe44d6a8ba9ed1bf253bc2fd -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/BCG_FPSController.cs: 3649571dbb0ac6fb41bd92f7c2f6cb03 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitInitLoad.cs: d7739be1ca0f7eb9cb13c4d610eb10b2 -> 
+  custom:scripting/monoscript/fileName/BCG_TPSController.cs: ab983d311bd4bd68f6eb7b1896529d4e -> 
+  custom:scripting/monoscript/fileName/BCG_InputActions.cs: 849ed7f5b11c9db237ef61b01c5a5104 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitSettings.cs: cbdb6a3478028f3d9e6e33947997f2fc -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitManagerEditor.cs: f81b65f383aebbe8b1a3bd3f77fe083d -> 
+  custom:scripting/monoscript/fileName/BCG_UIInteractionButton.cs: 0fe86db546e2b172a22e58a34ba9be19 -> 
+  custom:scripting/monoscript/fileName/BCG_EnterExitCharacterUICanvas.cs: ae318572531cdf9801f1b1a346eee727 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/BCG_SetScriptingSymbol.cs: 92356e71a8c8da65efc83f0b7b259df6 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 7a6bb044387840bce89b838598dcbd77 -> bbca1167aa81ee8dcd402130b43982ac
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 59d618ec72750aa31721e9af5429f2e1 -> 253772d6d3a8219522539d7c840d2f16
+  custom:scripting/monoscript/fileName/BCG_Joystick.cs: 6808541e5b7a92528406ac2aa8546f4b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 832.071822 seconds.
+  path: Assets/BoneCracker Games Shared Assets/Prefabs/Character/BCG_TPSController.prefab
+  artifactKey: Guid(19db51119cd56924fa78a2fa4cad7130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneCracker Games Shared Assets/Prefabs/Character/BCG_TPSController.prefab using Guid(19db51119cd56924fa78a2fa4cad7130) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '139f6bd843e1615bbf0a25ea834b5929') in 0.006459 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/BoneCracker Games Shared Assets/Scripts
+  artifactKey: Guid(32e180f5e918efe42a390a06b83166c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneCracker Games Shared Assets/Scripts using Guid(32e180f5e918efe42a390a06b83166c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '958badb74fde421453095b5094ac21b9') in 0.001310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/BoneCracker Games Shared Assets
+  artifactKey: Guid(81b74a3152cc7b14ca0ee382b1f73d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneCracker Games Shared Assets using Guid(81b74a3152cc7b14ca0ee382b1f73d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'b218855379a760e7ec450b4516197ce8') in 0.001109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/BoneCracker Games Shared Assets/Prefabs/Character
+  artifactKey: Guid(a9bae36de22becf459c41a9d0715d476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneCracker Games Shared Assets/Prefabs/Character using Guid(a9bae36de22becf459c41a9d0715d476) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '1682f04d79e6aec0bbd74c8bcaa8374c') in 0.001198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/BoneCracker Games Shared Assets/Resources/BCG_EnterExitSettings.asset
+  artifactKey: Guid(878339275bdcdb3458894515ef6f9727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneCracker Games Shared Assets/Resources/BCG_EnterExitSettings.asset using Guid(878339275bdcdb3458894515ef6f9727) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '9733130aae4b3e700627d97bc6928415') in 0.027402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 11.789836 seconds.
+  path: Assets/BoneCracker Games Shared Assets/Prefabs/Character/BCG_TPSController.prefab
+  artifactKey: Guid(19db51119cd56924fa78a2fa4cad7130) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BoneCracker Games Shared Assets/Prefabs/Character/BCG_TPSController.prefab using Guid(19db51119cd56924fa78a2fa4cad7130) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '139f6bd843e1615bbf0a25ea834b5929') in 0.001536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.099323 seconds.
+  path: Assets/RealisticCarControllerV3/Resources/Photon Vehicles/Pickup.prefab
+  artifactKey: Guid(d65ab19f1cdbd8e42a66376671a9ce34) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/RealisticCarControllerV3/Resources/Photon Vehicles/Pickup.prefab using Guid(d65ab19f1cdbd8e42a66376671a9ce34) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ec6b8d6e2cfc7ee936cbe6ff91f0bdb6') in 0.917640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 230
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/BoneCracker Games Shared Assets/Editor/BCG_SetScriptingSymbol.cs
+  artifactKey: Guid(5ffedcb6c83eaa04abcd13838efc0085) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/BoneCracker Games Shared Assets/Editor/BCG_SetScriptingSymbol.cs using Guid(5ffedcb6c83eaa04abcd13838efc0085) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'f2df54877809a1f47d48307fadb68fbd') in 0.018470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/URP/Settings/SampleSceneProfile.asset
+  artifactKey: Guid(a6560a915ef98420e9faacc1c7438823) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b)
+Start importing Assets/URP/Settings/SampleSceneProfile.asset using Guid(a6560a915ef98420e9faacc1c7438823) Importer(2089858483,3d70f49cd1c2eb9ae422958d1c652c6b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '312cb32370c3293ac76a23a61e37990a') in 0.026332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
